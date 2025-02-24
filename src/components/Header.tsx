@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const Header: React.FC = () => {
     return (
-        <header style={{ padding: '20px', backgroundColor: '#f4f4f4', color: '#333'}}>
+        <header className='header'>
             <Link href="/">Serhii Smilianets</Link>
         </header>
     )
