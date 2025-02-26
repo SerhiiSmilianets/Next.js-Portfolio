@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Serhii Smilianets",
+  title: "Serhii Smilianets | Portfolio",
   description: "Serhii Smilianets portfolio website",
 };
 
@@ -36,7 +36,9 @@ export default function RootLayout({
           <Header/>
           <Row>
             <Sidebar/>
-            {children}
+            <div className="layout-content">
+              {children}
+            </div>
           </Row>
         </main>
       </body>

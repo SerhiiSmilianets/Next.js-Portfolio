@@ -10,6 +10,7 @@ export const Sidebar: React.FC = () => {
                 <Link href="/about">About Me</Link>
                 <Link href="/projects">Projects</Link>
                 <Link href="/contacts">Contacts</Link>
+                <Link href="/cv-file">Show CV</Link>
             </Column>
         </aside>
     );

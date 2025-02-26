@@ -1,17 +1,20 @@
 .header {
     width: 100%;
     height: 60px;
-    background-color: #444;
+    background-color: #050313;
     color: #fff;
     display: flex;
     align-items: center;
     padding: 20px;
+    position: fixed;
+    top: 0;
 }
 
 .sidebar {
     height: calc(100vh - 60px);
+    top: 60px;
     width: 250px;
-    background-color: #444;
+    background-color: #050313;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -19,11 +22,23 @@
     justify-content: flex-start;
     padding: 20px;
     overflow: hidden;
+    position: fixed;
 }
 
 .main {
     flex-grow: 1;
     overflow: hidden; 
+}
+
+.layout-content {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    position: static;
+    margin-left: 250px;
+    margin-top: 60px;
 }
 
 

@@ -1,0 +1,133 @@
+/* Regular Styles */
+.projectName {
+    font-size: 18px;  /* Consistent size for project names */
+    font-weight: 500;  /* Slightly bold */
+    color: #444;  /* Dark gray */
+    margin-bottom: 6px;  /* Consistent margin */
+    text-transform: capitalize;  /* Neat capitalization */
+  }
+  
+  .projectName:hover {
+    color: #0070f3;  /* Hover color for interactivity */
+    text-decoration: underline;  /* Underline on hover */
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  .header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .section {
+    margin-top: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .section h2 {
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  .section p, .section ul {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .section a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .section a:hover {
+    text-decoration: underline;
+  }
+  
+  .section ul {
+    padding-left: 20px;
+  }
+  
+  .section li {
+    margin-bottom: 10px;
+  }
+  
+  /* Print Styles */
+  @media print {
+    /* Prevent overflow and ensure everything fits on the page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+  
+    .container {
+      max-width: 100%;
+      margin: 0;
+      padding: 10px;
+      background: white;
+      color: #333;
+    }
+  
+    .header {
+      text-align: left;
+      padding-bottom: 15px;
+      border-bottom: none; /* Remove border for a cleaner print */
+    }
+  
+    .avatar {
+      display: none; /* Hide the avatar image for print */
+    }
+  
+    .section {
+      page-break-inside: avoid;  /* Prevent sections from being broken across pages */
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+  
+    .section h1, .section h2, .section h3 {
+      font-size: 22px;  /* Slightly smaller font for headings in print */
+    }
+  
+    .section p, .section ul, .section li {
+      font-size: 16px;
+    }
+  
+    .projectName {
+      font-size: 16px;  /* Consistent font size for project names */
+      font-weight: 500;
+      color: #444;
+      text-transform: capitalize;
+    }
+  
+    .section a {
+      color: #0070f3; /* Keep link color for print */
+    }
+  
+    /* Ensure proper margins for printing */
+    @page {
+      margin: 20mm;
+    }
+  }
+  
