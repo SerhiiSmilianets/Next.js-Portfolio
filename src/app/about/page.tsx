@@ -1,7 +1,19 @@
-// pages/about.tsx
+'use client'
+
 import Head from 'next/head';
+import { useState, useEffect } from 'react';
 
 export default function About() {
+  const careerStartDate = new Date('2018-09-12');
+  const [experinceYears, setExperinceYears] = useState(0);
+  
+  useEffect(() => {
+    const currentDate = new Date();
+    const diff = currentDate.getTime() - careerStartDate.getTime();
+    const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
+    setExperinceYears(years);
+  }, []);
+
   return (
     <div>
       <Head>
@@ -16,7 +28,7 @@ export default function About() {
         <section>
           <h2>Summary</h2>
           <p>
-            I am a seasoned software engineer with over five years of experience, specializing in the Salesforce Commerce Cloud platform. My expertise covers both front-end and back-end development using technologies like SiteGenesis, SFRA, jQuery, native JavaScript, and Vue.js. I began my career as a front-end developer and later transitioned to back-end development. Throughout my journey, I have contributed to high-impact projects for companies such as Continente, Moleskine, Sonae Fashion, and Bugaboo. I am a disciplined worker, detail-oriented, independent thinker, and a continuous learner who is always ready to help and achieve goals.
+            I am a seasoned software engineer with over {experinceYears} years of experience, specializing in the Salesforce Commerce Cloud platform. My expertise covers both front-end and back-end development using technologies like SiteGenesis, SFRA, jQuery, native JavaScript, and Vue.js. I began my career as a front-end developer and later transitioned to back-end development. Throughout my journey, I have contributed to high-impact projects for companies such as Continente, Moleskine, Sonae Fashion, and Bugaboo. I am a disciplined worker, detail-oriented, independent thinker, and a continuous learner who is always ready to help and achieve goals.
           </p>
         </section>
 
