@@ -1,18 +1,10 @@
-import { headers } from 'next/headers';
-
-interface Project {
-  id: string;
-  project_name: string;
-  start_date: string;
-  end_date: string;
-  link: string;
-  logo: string;
-  general_information: string;
-  responsibilities: string;
-}
+import { headers as nextHeaders } from 'next/headers';
+import { Project } from '@/interfaces';
+import { ProjectCard } from '@/components/ProjectCard';
 
 async function getProjects() {
-    const host = headers().get('host');
+    const headers = new Headers(await nextHeaders());
+    const host = headers.get('host');
     const protocol = process.env.NODE_ENV === 'production' ? 'https' : 'http'; // Handle HTTPS in production
     const baseUrl = `${protocol}://${host}`;
 
@@ -32,19 +24,20 @@ async function getProjects() {
   
     return (
       <div>
-        <h1>Projects</h1>
+        <h1 className='page-title'>Projects</h1>
         {projects.length === 0 ? (
           <p>No projects available.</p>
         ) : (
             <ul>
             {projects.map((project: Project) => (
-              <li key={project.id}>
-              <h3>{project.project_name}</h3>
-              <p>{project.general_information}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                View Project
-              </a>
-              </li>
+              // <li key={project.id}>
+              // <h3>{project.project_name}</h3>
+              // <p>{project.general_information}</p>
+              // <a href={project.link} target="_blank" rel="noopener noreferrer">
+              //   View Project
+              // </a>
+              // </li>
+              <ProjectCard project={project} key={project.id} />
             ))}
             </ul>
         )}
