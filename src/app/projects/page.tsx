@@ -1,6 +1,7 @@
 import { headers as nextHeaders } from 'next/headers';
 import { Project } from '@/interfaces';
 import { ProjectCard } from '@/components/ProjectCard';
+import "./projects.css";
 
 async function getProjects() {
     const headers = new Headers(await nextHeaders());
@@ -30,13 +31,6 @@ async function getProjects() {
         ) : (
             <ul>
             {projects.map((project: Project) => (
-              // <li key={project.id}>
-              // <h3>{project.project_name}</h3>
-              // <p>{project.general_information}</p>
-              // <a href={project.link} target="_blank" rel="noopener noreferrer">
-              //   View Project
-              // </a>
-              // </li>
               <ProjectCard project={project} key={project.id} />
             ))}
             </ul>

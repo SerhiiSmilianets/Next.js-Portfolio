@@ -25,7 +25,7 @@
         "start_date": 1675200000000,
         "end_date": 1693843200000,
         "link": "https://www.hansanders.nl/",
-        "logo": "hansanders.jpeg",
+        "logo": "hansanders.png",
         "general_information": "The optician store.",
         "responsibilities": "Bug fixes, updating server-side logic, updating Google Maps data processing."
     },
@@ -55,7 +55,7 @@
         "start_date": 1633046400000,
         "end_date": 1643673600000,
         "link": "https://www.whittard.com",
-        "logo": "whittard.jpeg",
+        "logo": "whittard.png",
         "general_information": "Luxury coffee and tea gifts.",
         "responsibilities": "Shipping schedule implementation, Customer Service Center adaptation, Notify Me Later logic, Page Designer configuration."
     },
