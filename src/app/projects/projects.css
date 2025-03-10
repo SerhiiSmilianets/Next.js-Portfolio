@@ -1,5 +1,13 @@
 .project-logo {
-  margin-right: 20px;
+  /* margin-right: 20px; */
   padding: 1rem;
   border-radius: 5%;
+}
+
+.project-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: rgb(229 231 235);
 }
