@@ -23,7 +23,7 @@ export default function About() {
       </Head>
 
       <main>
-        <h1>About Me</h1>
+        <h1 className='page-title'>About Me</h1>
         
         <section>
           <h2>Summary</h2>

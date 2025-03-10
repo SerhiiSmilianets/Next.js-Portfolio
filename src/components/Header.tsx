@@ -12,6 +12,8 @@ export const Header: React.FC = () => {
                     alt="Serhii Smilianets"
                 />
             </Link>
+
+            <button className="downloadCVButton">Download CV</button>
         </header>
     )
 }
