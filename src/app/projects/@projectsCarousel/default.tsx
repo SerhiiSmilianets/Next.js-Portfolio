@@ -9,8 +9,8 @@ export default async function ProjectsCarouselDefault() {
     
     return (
         <>
-            {projects.length === 0 ? (
-            <p>No projects available.</p>
+            {!projects || !projects.length ? (
+            <p>No projects</p>
             ) : (
                 <Row>
                 {projects.map((project: Project) => (

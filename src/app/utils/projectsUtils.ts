@@ -14,7 +14,9 @@ export async function getProjects() {
     throw new Error('Failed to fetch projects');
   }
 
-  return response.json();
+  const data = await response.json();
+  
+  return data.projects;
 }
 
 export async function getProject(projectId: string) {
