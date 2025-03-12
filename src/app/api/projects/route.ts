@@ -3,7 +3,7 @@ import path from 'path';
 import { NextResponse } from 'next/server';
 import { Project } from '@/interfaces';
 
-const filePath = path.join(process.cwd(), '/src/data/projects.json');
+const filePath = path.join(process.cwd(), '/src/data/data.json');
 
 const readData = (): Project[] => {
   if (!fs.existsSync(filePath)) {

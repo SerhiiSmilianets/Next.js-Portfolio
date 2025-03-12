@@ -1,0 +1,286 @@
+{   
+    "personalInfo": {
+        "name": "Serhii Smilianets",
+        "mainTitle": "Salesforce Commerce Cloud Developer",
+        "secondaryTitles": ["Full Stack Developer", "Web Developer"],
+        "email": "smilyanets1991@gmail.com",
+        "phone": "+380 96 831 09 94",
+        "education": "Specialist degree in Information Technology",
+        "educationPlace": "Odesa National Academy of Communications"
+    },
+    "skills": {
+        "languages": ["JavaScript", "HTML", "CSS"],
+        "frameworks": ["React", "Next.js", "Node.js", "Express.js", "Salesforce Commerce Cloud"],
+        "tools": ["Git", "Jira", "Confluence", "Postman", "Figma"],
+        "databases": ["MongoDB"],
+        "other": ["Agile", "Scrum", "AI"]
+    },
+    "contactInfo": {
+        "email": "smilyanets1991@gmail.com",
+        "phone": "+380 96 831 09 94",
+        "telegram": "https://t.me/serhii_smilianets",
+        "linkedin": "https://www.linkedin.com/in/serhii-smilianets-3425021b8/",
+        "facebook": "https://www.facebook.com/SmilianetsSerhii",
+        "instagram": "https://www.instagram.com/enerjay1991/"
+    },
+    "projects":[
+        {
+            "id": "sephorame",
+            "project_name": "Sephora ME",
+            "start_date": 1704067200000,
+            "end_date": 1735686000000,
+            "link": "https://www.sephora.me/",
+            "logo": "sephora.svg",
+            "general_information": "Sephora is a global beauty retailer founded in 1969 in France, offering a wide range of cosmetics, skincare, fragrance, and beauty tools. Known for its diverse product selection from high-end and niche brands, Sephora provides a one-stop shopping experience for beauty enthusiasts. The company is recognized for its immersive shopping experience, offering personalized beauty consultations, a wide variety of samples, and a loyalty program. Sephora operates stores in numerous countries worldwide and has a strong online presence, making beauty products accessible to a global audience.",
+            "responsibilities": [
+                "Developed custom SLAS/SCAPI hooks for Salesforce Commerce Cloud API to extend functionality and meet specific business needs.",
+                "Updated existing hooks for Product Detail Page (PDP), Product Listing Page (PLP), and Search to ensure accurate and consistent data delivery.",
+                "Created and managed jobs for import/export processes, ensuring smooth and timely updates for catalog and product data.",
+                "Configured and managed Business Manager database, optimizing data management processes and ensuring efficient system operations."
+              ],
+            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+        },
+        {
+            "id": "muchachomalo",
+            "project_name": "Muchachomalo",
+            "start_date": 1675200000000,
+            "end_date": 1693843200000,
+            "link": "https://www.muchachomalo.com",
+            "logo": "muchachomalo.svg",
+            "general_information": "Muchachomalo is a Dutch brand founded in 2009, known for its bold and vibrant men’s underwear and loungewear. The brand focuses on offering stylish, comfortable, and high-quality products with unique prints and patterns. Muchachomalo combines modern design with a strong emphasis on creativity, producing collections that are both playful and fashionable, appealing to men who value comfort and individuality in their daily wear.",
+            "responsibilities": [
+                "Identified and resolved bugs to ensure optimal performance and stability of the system.",
+                "Developed and implemented server-side solutions to enhance functionality and system efficiency.",
+                "Provided ongoing support to the team, assisting with development tasks and troubleshooting issues.",
+                "Integrated the new GA4 (Google Analytics) module to enhance data tracking and reporting capabilities.",
+                "Updated SFRA to the latest version, ensuring compatibility with new features and security improvements.",
+                "Upgraded Adyen to the latest version, ensuring seamless payment processing and improved transaction security."
+              ],
+            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+              
+        },
+        {
+            "id": "hansanders",
+            "project_name": "Hans Anders",
+            "start_date": 1675200000000,
+            "end_date": 1693843200000,
+            "link": "https://www.hansanders.nl/",
+            "logo": "hansanders.png",
+            "general_information": "Hans Anders is a Dutch optical retail chain founded in 1982, specializing in affordable eyewear, contact lenses, and hearing aids. Known for its combination of quality, style, and competitive pricing, the brand operates numerous stores across the Netherlands, Belgium, and Sweden. Hans Anders focuses on making vision and hearing solutions accessible to a broad audience while maintaining modern designs and professional service.",
+            "responsibilities": [
+                "Identified and resolved bugs to improve system stability and performance.",
+                "Updated and optimized common server-side logic to enhance functionality and maintainability.",
+                "Enhanced the Google Maps integration by implementing additional data transmission and processing on the server side, improving accuracy and usability."
+              ],
+            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+        },              
+        {
+            "id": "florisvanbommel",
+            "project_name": "Floris van Bommel",
+            "start_date": 1675200000000,
+            "end_date": 1693843200000,
+            "link": "https://int.florisvanbommel.com/",
+            "logo": "florisvanbommel.svg",
+            "general_information": "Floris van Bommel is a premium Dutch footwear brand known for its high-quality craftsmanship, innovative designs, and stylish yet comfortable shoes. Part of the family-owned Van Bommel company, which dates back to 1734, the Floris van Bommel line combines traditional shoemaking expertise with modern fashion trends. The brand is particularly recognized for its unique patterns, bold colors, and high-quality materials, making it a standout in luxury footwear.",
+            "responsibilities": [
+                "Identified and resolved bugs to ensure optimal site performance and stability.",
+                "Developed and implemented server-side solutions to enhance functionality and efficiency.",
+                "Provided ongoing support to the team, assisting with development and troubleshooting tasks.",
+                "Updated and optimized scheduled jobs for product feed management, ensuring accurate and timely data synchronization."
+            ],
+            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+        },
+        {
+            "id": "mizuno",
+            "project_name": "Mizuno",
+            "start_date": 1675200000000,
+            "end_date": 1693843200000,
+            "link": "https://emea.mizuno.com/",
+            "logo": "mizuno.svg",
+            "general_information": "Mizuno is a Japanese sports equipment and apparel company founded in 1906. It is known for producing high-quality gear for various sports, including running, baseball, golf, tennis, and volleyball. Mizuno is particularly recognized for its advanced technology in footwear, offering performance-driven designs that emphasize comfort, durability, and innovation. The brand is widely respected among professional athletes and sports enthusiasts worldwide.",
+            "responsibilities": [
+                "Identified and resolved bugs to ensure optimal site performance and stability.",
+                "Developed and implemented server-side solutions to enhance functionality and efficiency.",
+                "Provided ongoing support to the team, assisting with development and troubleshooting tasks.",
+                "Updated and integrated Adyen payment services, ensuring seamless and secure transactions.",
+                "Implemented T-shirt jersey customization with player names, enhancing product personalization options.",
+                "Investigated and fixed failed order issues, improving order processing reliability and customer satisfaction."
+              ],
+            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+        },
+        {
+            "id": "wolford",
+            "project_name": "Wolford",
+            "start_date": 1675200000000,
+            "end_date": 1693843200000,
+            "link": "https://www.wolford.com/",
+            "logo": "wolford.svg",
+            "general_information": "Wolford is a luxury Austrian brand founded in 1950, specializing in high-quality legwear, lingerie, and bodywear. Known for its premium materials, innovative knitting techniques, and seamless designs, Wolford is a go-to brand for elegant and comfortable hosiery, shapewear, and clothing. Its products are favored for their durability, sophistication, and timeless appeal, making it a staple in the world of luxury fashion.",
+            "responsibilities": [
+                "Identified and resolved bugs to maintain site stability and optimize performance.",
+                "Developed and implemented server-side solutions to enhance functionality and efficiency.",
+                "Provided technical support to the team, assisting with development and troubleshooting tasks.",
+                "Updated and optimized scheduled jobs for product feed management, ensuring accurate and timely data synchronization."
+              ],
+            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+        },
+        {
+            "id": "bugaboo",
+            "project_name": "Bugaboo",
+            "start_date": 1640995200000,
+            "end_date": 1675200000000,
+            "link": "https://www.bugaboo.com/",
+            "logo": "bugaboo.svg",
+            "general_information": "Bugaboo is a Dutch company known for designing and manufacturing high-quality, innovative strollers and baby products. Founded in 1994, Bugaboo is renowned for its stylish, functional, and durable strollers that offer comfort and ease for both parents and children. The brand is known for its modular stroller systems that can be customized with various accessories and features. Bugaboo’s products are popular worldwide and are recognized for their advanced engineering, smooth maneuverability, and sleek design.",
+            "responsibilities": [
+                "Integrated Marketing Cloud to facilitate email data transmission, improving customer communication and engagement.",
+                "Developed custom authentication for third-party data processing, securely managing and storing information within a Custom Object.",
+                "Updated logic for order shipping emails, ensuring accurate and timely customer notifications.",
+                "Resolved multiple issues related to product implementation logic, enhancing site stability and performance.",
+                "Designed and extended badge functionality for products, improving product visibility and categorization.",
+                "Upgraded SFRA from version 3.x.x to 6.x.x, ensuring compatibility with the latest features and security updates.",
+                "Implemented 'White Glove' logic in the checkout process, enhancing premium service offerings.",
+                "Redesigned and optimized bundle logic, improving product grouping and purchase flow.",
+                "Developed order tracking functionality with third-party API integration via OCAPI, enabling real-time shipment updates.",
+                "Implemented set component logic on the PDP, displaying recommended bundles below the main product with selectable variants and direct add-to-cart functionality.",
+                "Refactored availability and quantity logic to support multiple product types, including bundles, sets, master, variant, and standard products, ensuring accurate inventory management."
+              ],
+              "working_position": "Salesforce Commerce Cloud Back-End Developer"
+        },
+        {
+            "id": "whittard",
+            "project_name": "Whittard of Chelsea",
+            "start_date": 1633046400000,
+            "end_date": 1643673600000,
+            "link": "https://www.whittard.com",
+            "logo": "whittard.png",
+            "general_information": "Whittard of Chelsea is a British retailer specializing in premium tea, coffee, hot chocolate, and related accessories. Founded in 1886, the brand is known for its wide range of high-quality blends, including specialty teas, gourmet coffees, and luxurious hot chocolate. Whittard also offers a variety of teapots, mugs, and gift sets, emphasizing craftsmanship and tradition. The company is renowned for its commitment to sourcing the finest ingredients and creating unique, flavorful products for tea and coffee enthusiasts around the world.",
+            "responsibilities": [
+                "Developed a shipping schedule using out-of-the-box (OOB) tools, optimizing delivery planning and logistics.",
+                "Adapted the shipping schedule for integration with the Customer Service Center, improving support team efficiency.",
+                "Implemented the 'Notify Me Later' feature, enhancing customer engagement and product availability notifications.",
+                "Performed minor bug fixes to ensure system stability and optimal performance.",
+                "Configured Page Designer for Site Genesis, enabling streamlined content management and customization."
+              ],
+            "working_position": "Salesforce Commerce Cloud Full-Stack Developer"
+        },
+        {
+            "id": "moleskine",
+            "project_name": "Moleskine",
+            "start_date": 1614556800000,
+            "end_date": 1622505600000,
+            "link": "https://www.moleskine.com/",
+            "logo": "moleskine.svg",
+            "general_information": "Moleskine is an Italian brand renowned for its high-quality notebooks, journals, and stationery products. Founded in 1997, Moleskine is known for its iconic black hardcover notebooks, which have become synonymous with creativity, artistry, and productivity. The brand offers a variety of notebooks, planners, and accessories, all designed to inspire creativity and organization. Moleskine products are favored by writers, artists, professionals, and travelers for their sleek design, durable materials, and functional layout.",
+            "responsibilities": [
+                "Implemented Order Details and Order History features, integrating with Salesforce OMS (3rd party), ensuring accurate order data retrieval and display.",
+                "Refined the Search Page and enhanced filter functionality, improving product discovery and user experience.",
+                "Updated logic related to customer addresses, ensuring accurate and efficient address management throughout the site.",
+                "Extended checkout shipping logic to improve the flow and address various user scenarios, enhancing the overall checkout experience.",
+                "Identified and fixed issues across the site, ensuring seamless functionality and optimal performance."
+              ],
+            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+        },
+        {
+            "id": "baccarat",
+            "project_name": "Baccarat",
+            "start_date": 1612137600000,
+            "end_date": 1614556800000,
+            "link": "https://www.baccarat.com/",
+            "logo": "baccarat.svg",
+            "general_information": "Baccarat is a luxury French brand established in 1764, renowned for its high-quality crystal glassware, decorative items, and jewelry. The brand is famous for its exquisite craftsmanship, producing everything from elegant chandeliers and vases to fine crystal glasses and ornaments. Baccarat collaborates with renowned designers and artists, blending traditional glassmaking techniques with modern design. The brand is synonymous with sophistication, luxury, and timeless beauty, offering premium products that are highly sought after by collectors and connoisseurs.",
+            "responsibilities": [
+                "Troubleshooted and resolved bugs, ensuring the site remained stable and functional.",
+                "Implemented the Korean locale, enhancing the site's localization and accessibility for Korean-speaking users.",
+                "Updated the code logic to align with the latest requirements and changes, ensuring compatibility and improving site performance."
+              ],
+            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+        },
+        {
+            "id": "continente",
+            "project_name": "Continente",
+            "start_date": 1577846400000,
+            "end_date": 1612137600000,
+            "link": "https://www.continente.pt",
+            "logo": "continente.svg",
+            "general_information": "Continente is a leading supermarket chain in Portugal, owned by the Sonae Group. Founded in 1985, it offers a wide range of products, including groceries, fresh produce, household items, and electronics. Continente is known for its commitment to quality, competitive pricing, and a strong focus on customer satisfaction. The brand operates numerous stores across Portugal and has an online shopping platform, providing convenience and a broad selection of goods to its customers. Continente also promotes sustainability and environmental responsibility in its operations.",
+            "responsibilities": [
+                "Developed and maintained the Login/Register functionality, including customer activation logic.",
+                "Managed the Favorite List and Personal Data features, ensuring seamless user experience and data integrity.",
+                "Extended and resolved issues in the Egoi integration, contributing to enhanced functionality.",
+                "Worked on the MDM system, providing both feature enhancements and bug fixes.",
+                "Implemented and supported features related to Order History and Order Details integration with a third-party Order Management System (OMS).",
+                "Developed and maintained the Order Complete Transaction Email functionality, ensuring accurate and timely notifications.",
+                "Extended the Page Designer with custom fields to improve content flexibility and user customization.",
+                "Led the GTM (Google Tag Manager) implementation across the site, optimizing marketing and analytics tracking.",
+                "Implemented a Lengow Custom Feed, optimizing product data feed integration and enhancing eCommerce capabilities.",
+                "Served as a Full-Stack Developer, supporting the Front-End team by implementing static pages and addressing bugs across the system."
+              ],
+              
+            "working_position": "Salesforce Commerce Cloud Full-Stack Developer"
+        },
+        {
+            "id": "ubisoft",
+            "project_name": "Ubisoft",
+            "start_date": 1564617600000,
+            "end_date": 1575129600000,
+            "link": "https://www.ubisoft.com",
+            "logo": "ubisoft.svg",
+            "general_information": "Ubisoft is a leading French video game company founded in 1986, known for creating and publishing some of the world’s most popular video game franchises. These include **Assassin’s Creed**, **Far Cry**, **Tom Clancy’s Rainbow Six**, and **Watch Dogs**. Ubisoft is recognized for its focus on immersive open-world games, engaging narratives, and cutting-edge graphics. The company operates worldwide, with studios in various countries, and is known for its commitment to innovation, creativity, and developing games for multiple platforms.",
+            "responsibilities": [
+                "Implemented Google Tag Manager (GTM) across the site, optimizing marketing and analytics tracking for better data insights.",
+                "Troubleshooted and resolved bugs, ensuring the site maintained optimal performance and user experience."
+              ],
+            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+        },
+        {
+            "id": "etnia",
+            "project_name": "Etnia Barcelona",
+            "start_date": 1561382400000,
+            "end_date": 1575129600000,
+            "link": "https://www.etniabarcelona.com/",
+            "logo": "etnia.svg",
+            "general_information": "Etnia Barcelona is a Spanish eyewear brand founded in 2001 by David Pellicer. The company draws inspiration from Barcelona's vibrant culture, offering a diverse range of sunglasses and optical frames that blend vintage aesthetics with contemporary design. Etnia Barcelona collaborates with renowned artists and institutions, resulting in unique collections that celebrate art and creativity. Their products are crafted with high-quality materials, including mineral glass lenses and natural acetate, ensuring durability and comfort. The brand also emphasizes sustainability, working towards eco-friendly packaging and production processes. Etnia Barcelona's eyewear is available worldwide, with flagship stores in Barcelona and a strong online presence.",
+            "responsibilities": [
+                "Developed and implemented the Password Reset logic, ensuring secure and user-friendly password recovery functionality.",
+                "Implemented static pages, contributing to the site’s content structure and overall user experience.",
+                "Identified, troubleshooted, and fixed bugs, ensuring the smooth operation of the site and minimizing downtime.",
+                "Led the implementation of new features, enhancing the site's functionality and providing value to users."
+              ],
+            "working_position": "Salesforce Commerce Cloud Full-Stack Developer"
+        },
+        {
+            "id": "bouclair",
+            "project_name": "Bouclair",
+            "start_date": 1551446400000,
+            "end_date": 1561382400000,
+            "link": "https://www.bouclair.com/",
+            "logo": "bouclair.png",
+            "general_information": "Bouclair is a Canadian home decor brand offering a wide range of stylish and affordable furniture, decor, and textiles. With a focus on contemporary design, Bouclair provides customers with chic home accessories, from rugs and lighting to bedding and kitchenware. The brand is known for its modern aesthetics, offering products that blend functionality with trendy designs, aiming to enhance the ambiance of any living space.",
+            "responsibilities": [
+                "Led the transition from Site Genesis to Salesforce Reference Architecture (SFRA), ensuring seamless migration and improved site performance.",
+                "Implemented the Wishlist functionality, enhancing user experience by allowing customers to save and manage their desired products.",
+                "Identified and resolved post-migration bugs, ensuring the stability and functionality of the site following the transition to SFRA."
+              ],
+            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+        },
+        {
+            "id": "cigars",
+            "project_name": "Cigars",
+            "start_date": 1546300800000,
+            "end_date": 1551446400000,
+            "link": "https://www.cigars.com",
+            "logo": "cigars.jpeg",
+            "general_information": "Cigars.com is a prominent online retailer specializing in premium cigars, cigar accessories, and related products. The site offers a wide variety of brands and cigar collections, catering to both beginner and seasoned cigar enthusiasts. Known for its customer service, the platform provides resources, samplers, and exclusive deals to enhance the cigar experience. They also offer helpful guides for selecting and storing cigars.",
+            "responsibilities": [
+                "Designed and implemented the Authentication system, including Login and Registration functionality.",
+                "Developed and maintained the Order History feature, ensuring accurate and efficient display of user order data.",
+                "Integrated and optimized the Order Details feature, providing users with detailed insights into their past purchases.",
+                "Designed and implemented the Navigation Menu, enhancing site usability and user experience.",
+                "Developed the Customer Avatar feature, allowing for personalized user interactions and profile management."
+              ],
+              
+            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+        }
+    ]
+}
