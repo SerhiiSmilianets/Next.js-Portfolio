@@ -6,5 +6,10 @@ export interface Project {
     link: string;
     logo: string;
     general_information: string;
-    responsibilities: string;
+    responsibilities: string[];
+    technologies: string[];
+    team_size: number;
+    working_position: string;
+    technicalStack: string[];
+    projectType: string;
 }

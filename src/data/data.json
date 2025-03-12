@@ -38,7 +38,9 @@
                 "Created and managed jobs for import/export processes, ensuring smooth and timely updates for catalog and product data.",
                 "Configured and managed Business Manager database, optimizing data management processes and ensuring efficient system operations."
               ],
-            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+            "working_position": "Salesforce Commerce Cloud Back-End Developer",
+            "technologiesUsed": ["SFCC", "Salesforce Commerce Cloud", "SFRA", "Headless Architecture", "SCAPI", "SLAS", "Jobs"],
+            "technicalStack": ["js", "postman", "git", "npm"]
         },
         {
             "id": "muchachomalo",
@@ -56,7 +58,9 @@
                 "Updated SFRA to the latest version, ensuring compatibility with new features and security improvements.",
                 "Upgraded Adyen to the latest version, ensuring seamless payment processing and improved transaction security."
               ],
-            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+            "working_position": "Salesforce Commerce Cloud Back-End Developer",
+            "technologiesUsed": ["SFCC", "Salesforce Commerce Cloud", "SFRA", "Adyen", "GA4", "Jobs"],
+            "technicalStack": ["js", "html", "git", "npm"]
               
         },
         {
@@ -72,7 +76,9 @@
                 "Updated and optimized common server-side logic to enhance functionality and maintainability.",
                 "Enhanced the Google Maps integration by implementing additional data transmission and processing on the server side, improving accuracy and usability."
               ],
-            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+            "working_position": "Salesforce Commerce Cloud Back-End Developer",
+            "technologiesUsed": ["SFCC", "SFRA", "Salesforce Commerce Cloud", "Jobs"],
+            "technicalStack": ["js", "html", "git", "npm"]
         },              
         {
             "id": "florisvanbommel",
@@ -88,7 +94,9 @@
                 "Provided ongoing support to the team, assisting with development and troubleshooting tasks.",
                 "Updated and optimized scheduled jobs for product feed management, ensuring accurate and timely data synchronization."
             ],
-            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+            "working_position": "Salesforce Commerce Cloud Back-End Developer",
+            "technologiesUsed": ["SFCC", "Salesforce Commerce Cloud", "Site Genesis", "Jobs"],
+            "technicalStack": ["js", "html", "git", "npm"]
         },
         {
             "id": "mizuno",
@@ -106,7 +114,9 @@
                 "Implemented T-shirt jersey customization with player names, enhancing product personalization options.",
                 "Investigated and fixed failed order issues, improving order processing reliability and customer satisfaction."
               ],
-            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+            "working_position": "Salesforce Commerce Cloud Back-End Developer",
+            "technologiesUsed": ["SFCC", "Salesforce Commerce Cloud", "SFRA", "Adyen", "Jobs"],
+            "technicalStack": ["js", "html", "git", "npm"]
         },
         {
             "id": "wolford",
@@ -122,7 +132,9 @@
                 "Provided technical support to the team, assisting with development and troubleshooting tasks.",
                 "Updated and optimized scheduled jobs for product feed management, ensuring accurate and timely data synchronization."
               ],
-            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+            "working_position": "Salesforce Commerce Cloud Back-End Developer",
+            "technologiesUsed": ["SFCC", "Salesforce Commerce Cloud", "Site Genesis", "Jobs"],
+            "technicalStack": ["js", "html", "git", "npm"]
         },
         {
             "id": "bugaboo",
@@ -145,7 +157,9 @@
                 "Implemented set component logic on the PDP, displaying recommended bundles below the main product with selectable variants and direct add-to-cart functionality.",
                 "Refactored availability and quantity logic to support multiple product types, including bundles, sets, master, variant, and standard products, ensuring accurate inventory management."
               ],
-              "working_position": "Salesforce Commerce Cloud Back-End Developer"
+              "working_position": "Salesforce Commerce Cloud Back-End Developer",
+              "technologiesUsed": ["OCAPI", "Services", "JS", "Salesforce Commerce Cloud", "SFRA", "Jobs"],
+              "technicalStack": ["js", "html", "git", "postman", "npm"]
         },
         {
             "id": "whittard",
@@ -162,7 +176,9 @@
                 "Performed minor bug fixes to ensure system stability and optimal performance.",
                 "Configured Page Designer for Site Genesis, enabling streamlined content management and customization."
               ],
-            "working_position": "Salesforce Commerce Cloud Full-Stack Developer"
+            "working_position": "Salesforce Commerce Cloud Full-Stack Developer",
+            "technologiesUsed": ["Services", "Customer Service Center", "3-d party client side", "Jobs", "Salesforce Commerce Cloud", "Site Genesis"],
+            "technicalStack": ["js", "html", "git", "css", "npm"]
         },
         {
             "id": "moleskine",
@@ -179,7 +195,9 @@
                 "Extended checkout shipping logic to improve the flow and address various user scenarios, enhancing the overall checkout experience.",
                 "Identified and fixed issues across the site, ensuring seamless functionality and optimal performance."
               ],
-            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+            "working_position": "Salesforce Commerce Cloud Back-End Developer",
+            "technologiesUsed": ["OMS", "MBWay", "Salesforce Commerce Cloud", "SFRA"],
+            "technicalStack": ["js", "html", "git", "npm"]
         },
         {
             "id": "baccarat",
@@ -194,7 +212,9 @@
                 "Implemented the Korean locale, enhancing the site's localization and accessibility for Korean-speaking users.",
                 "Updated the code logic to align with the latest requirements and changes, ensuring compatibility and improving site performance."
               ],
-            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+            "working_position": "Salesforce Commerce Cloud Back-End Developer",
+            "technologiesUsed": ["Salesforce Commerce Cloud", "Site Genesis"],
+            "technicalStack": ["js", "html", "git", "npm"]
         },
         {
             "id": "continente",
@@ -217,7 +237,9 @@
                 "Served as a Full-Stack Developer, supporting the Front-End team by implementing static pages and addressing bugs across the system."
               ],
               
-            "working_position": "Salesforce Commerce Cloud Full-Stack Developer"
+            "working_position": "Salesforce Commerce Cloud Full-Stack Developer",
+            "technologiesUsed": ["OMS", "Identity Manager", "EGOI", "Transaction Emails", "MDM", "VLL", "MBWay", "PayPal", "GTM", "Google Geolocation", "Salesforce Commerce Cloud", "SFRA"],
+            "technicalStack": ["js", "html", "git", "npm", "css", "vue"]
         },
         {
             "id": "ubisoft",
@@ -231,7 +253,9 @@
                 "Implemented Google Tag Manager (GTM) across the site, optimizing marketing and analytics tracking for better data insights.",
                 "Troubleshooted and resolved bugs, ensuring the site maintained optimal performance and user experience."
               ],
-            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+            "working_position": "Salesforce Commerce Cloud Back-End Developer",
+            "technologiesUsed": ["Zuora", "GTM", "Salesforce Commerce Cloud", "Site Genesis", "Pipelines"],
+            "technicalStack": ["js", "html", "git", "npm"]
         },
         {
             "id": "etnia",
@@ -247,7 +271,9 @@
                 "Identified, troubleshooted, and fixed bugs, ensuring the smooth operation of the site and minimizing downtime.",
                 "Led the implementation of new features, enhancing the site's functionality and providing value to users."
               ],
-            "working_position": "Salesforce Commerce Cloud Full-Stack Developer"
+            "working_position": "Salesforce Commerce Cloud Full-Stack Developer",
+            "technologiesUsed": ["Salesforce Commerce Cloud", "Site Genesis"],
+            "technicalStack": ["js", "html", "git", "npm", "css"]
         },
         {
             "id": "bouclair",
@@ -262,7 +288,9 @@
                 "Implemented the Wishlist functionality, enhancing user experience by allowing customers to save and manage their desired products.",
                 "Identified and resolved post-migration bugs, ensuring the stability and functionality of the site following the transition to SFRA."
               ],
-            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+            "working_position": "Salesforce Commerce Cloud Back-End Developer",
+            "technologiesUsed": ["Salesforce Commerce Cloud", "Site Genesis", "SFRA"],
+            "technicalStack": ["js", "html", "git", "npm"]
         },
         {
             "id": "cigars",
@@ -280,7 +308,9 @@
                 "Developed the Customer Avatar feature, allowing for personalized user interactions and profile management."
               ],
               
-            "working_position": "Salesforce Commerce Cloud Back-End Developer"
+            "working_position": "Salesforce Commerce Cloud Back-End Developer",
+            "technologiesUsed": ["Salesforce Commerce Cloud", "Site Genesis"],
+            "technicalStack": ["js", "html", "git", "npm"]
         }
     ]
 }

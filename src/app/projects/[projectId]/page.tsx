@@ -3,10 +3,10 @@ import { ProjectCard } from '@/components/ProjectCard';
 
 export default async function ProjectDetailsPage({
     params,
-    searchParams
+    // searchParams
   }: {
-    searchParams: { [key: string]: string },
-    params: Promise<{ slug: string }>
+    // searchParams: { [key: string]: string },
+    params: Promise<{ projectId: string }>
   }) {
     // const sparams = await searchParams;
     // const { projectId } = sparams ;

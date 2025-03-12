@@ -13,26 +13,26 @@ export default async function ProjectsCarouselDefault() {
             <p>No projects</p>
             ) : (
                 <Row>
-                {projects.map((project: Project) => (
-                    <Link 
-                        href={{
-                            pathname: `/projects/${project.id}`,
-                            // query: { projectId: project.id }
-                        }}
-                        prefetch={true}
-                        key={project.id + "-logo"} 
-                        className="project-logo-container">
+                    {projects.map((project: Project) => (
+                        <Link 
+                            href={{
+                                pathname: `/projects/${project.id}`,
+                                // query: { projectId: project.id }
+                            }}
+                            prefetch={true}
+                            key={project.id + "-logo"} 
+                            className="project-logo-container">
 
-                        <Image src={`/projectsLogos/${project.logo}`} 
-                                alt={project.project_name} 
-                                className="bg-gray-200 project-logo" 
-                                width={150}
-                                height={150}
-                                
-                        />
-                    </Link>
-                    
-                ))}
+                            <Image src={`/projectsLogos/${project.logo}`} 
+                                    alt={project.project_name} 
+                                    className="bg-gray-200 project-logo" 
+                                    width={150}
+                                    height={150}
+                                    
+                            />
+                        </Link>
+                        
+                    ))}
                 </Row>
             )}
         </>
