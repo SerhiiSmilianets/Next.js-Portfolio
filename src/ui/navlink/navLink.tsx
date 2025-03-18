@@ -1,0 +1,18 @@
+'use client'
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import styles from './navLink.module.css'; 
+import {NavLinkProps} from '@/interfaces';
+
+export const NavLink = ({ href, icon, name }: NavLinkProps) => {
+    const pathname = usePathname();
+    const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href);
+
+    return (
+        <Link className={`${styles.link} ${isActive ? styles.active : ''}`} href={href}>
+            {icon && <span>{icon}</span>}
+            <span className={styles.linkText}>{name}</span>
+        </Link>
+    )
+}

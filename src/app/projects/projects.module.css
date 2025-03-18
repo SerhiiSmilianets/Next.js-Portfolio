@@ -1,0 +1,16 @@
+.projectsCarousel {
+  display: flex;
+  gap: 8px;
+}
+.projectLogoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(229 231 235);
+}
+
+.projectLogo {
+  padding: 1rem;
+  border-radius: 5%;
+  background-color: rgb(234, 234, 234);
+}

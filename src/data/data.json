@@ -9,8 +9,7 @@
         "educationPlace": "Odesa National Academy of Communications"
     },
     "skills": {
-        "languages": ["JavaScript", "HTML", "CSS"],
-        "frameworks": ["React", "Next.js", "Node.js", "Express.js", "Salesforce Commerce Cloud"],
+        "skillStack": ["JavaScript", "HTML", "CSS", "React", "Next.js", "Node.js", "Express.js", "Salesforce Commerce Cloud", "SFRA", "SiteGenesis"],
         "tools": ["Git", "Jira", "Confluence", "Postman", "Figma"],
         "databases": ["MongoDB"],
         "other": ["Agile", "Scrum", "AI"]
@@ -23,6 +22,95 @@
         "facebook": "https://www.facebook.com/SmilianetsSerhii",
         "instagram": "https://www.instagram.com/enerjay1991/"
     },
+    "companies" : [
+        {
+            "id": "osf",
+            "companyName": "OSF Digital",
+            "start_date": 1535752800000,
+            "end_date": 1633039200000,
+            "position": "Salesforce Commerce Cloud Full Stack Developer",
+            "projects" : [
+                {
+                    "id": "cigars",
+                    "project_name": "Cigars"
+                },
+                {
+                    "id": "bouclair",
+                    "project_name": "Bouclair"
+                },
+                {
+                    "id": "etnia",
+                    "project_name": "Etnia Barcelona"
+                },
+                {
+                    "id": "ubisoft",
+                    "project_name": "Ubisoft"
+                },
+                {
+                    "id": "continente",
+                    "project_name": "Continente"
+                },
+                {
+                    "id": "baccarat",
+                    "project_name": "Baccarat"
+                },
+                {
+                    "id": "moleskine",
+                    "project_name": "Moleskine"
+                }
+            ]
+        },
+        {
+            "id": "tryzens",
+            "companyName": "Tryzens Global",
+            "start_date": 1633039200000,
+            "end_date": 1643670000000,
+            "position": "Senior Salesforce Commerce Cloud Full Stack Developer",
+            "projects" : [
+                {
+                    "id": "whittard",
+                    "project_name": "Whittard of Chelsea"
+                }
+            ]
+        },
+        {
+            "id": "epam",
+            "companyName": "EPAM Systems",
+            "start_date": 1633039200000,
+            "end_date": "Present",
+            "position": "Senior Salesforce Commerce Cloud Developer",
+            "projects" : [
+                {
+                    "id": "bugaboo",
+                    "project_name": "Bugaboo"
+                },
+                {
+                    "id": "wolford",
+                    "project_name": "Wolford"
+                },
+                {
+                    "id": "mizuno",
+                    "project_name": "Mizuno"
+                },
+                {
+                    "id": "florisvanbommel",
+                    "project_name": "Floris van Bommel"
+                },
+                {
+                    "id": "hansanders",
+                    "project_name": "Hans Anders"
+                },
+                {
+                    "id": "muchachomalo",
+                    "project_name": "Muchachomalo"
+                },
+                {
+                    "id": "sephorame",
+                    "project_name": "Sephora ME"
+                }
+            ]
+        }
+    ],
     "projects":[
         {
             "id": "sephorame",

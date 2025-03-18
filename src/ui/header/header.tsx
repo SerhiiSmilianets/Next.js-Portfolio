@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Logo from '../../public/serhii_smilianets_log.svg';
+import Logo from '../../../public/serhii_smilianets_log.svg';
+import styles from './header.module.css';
 
 export const Header: React.FC = () => {
     return (
-        <header className='header'>
+        <header className={styles.header}>
             <Link href="/">
                 <Image
                     src={Logo}
@@ -13,7 +14,7 @@ export const Header: React.FC = () => {
                 />
             </Link>
 
-            <button className="downloadCVButton">Download CV</button>
+            <button className={styles.downloadCVButton}>Download CV</button>
         </header>
     )
 }

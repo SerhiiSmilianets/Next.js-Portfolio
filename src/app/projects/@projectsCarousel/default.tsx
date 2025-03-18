@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from 'next/link';
 import { Project } from '@/interfaces';
-import { getProjects } from '../../utils/projectsUtils';
-import { Row } from "@/components/Row";
+import { getProjects } from '../../lib/data';
+import styles from "../projects.module.css";
 
 export default async function ProjectsCarouselDefault() {
+    // console.log(projects)
     const projects = await getProjects(); // Fetch data before rendering
     
     return (
@@ -12,7 +13,7 @@ export default async function ProjectsCarouselDefault() {
             {!projects || !projects.length ? (
             <p>No projects</p>
             ) : (
-                <Row>
+                <div className={styles.projectsCarousel}>
                     {projects.map((project: Project) => (
                         <Link 
                             href={{
@@ -21,11 +22,11 @@ export default async function ProjectsCarouselDefault() {
                             }}
                             prefetch={true}
                             key={project.id + "-logo"} 
-                            className="project-logo-container">
+                            className={styles.projectLogoContainer} >
 
                             <Image src={`/projectsLogos/${project.logo}`} 
                                     alt={project.project_name} 
-                                    className="bg-gray-200 project-logo" 
+                                    className={styles.projectLogo} 
                                     width={150}
                                     height={150}
                                     
@@ -33,7 +34,7 @@ export default async function ProjectsCarouselDefault() {
                         </Link>
                         
                     ))}
-                </Row>
+                </div>
             )}
         </>
     );

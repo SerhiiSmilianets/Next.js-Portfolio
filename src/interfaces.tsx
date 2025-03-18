@@ -13,3 +13,9 @@ export interface Project {
     technicalStack: string[];
     projectType: string;
 }
+
+export interface NavLinkProps {
+    href: string;
+    icon?: string;
+    name: string;
+}

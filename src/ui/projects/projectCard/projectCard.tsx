@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Project } from '@/interfaces';
-import { Row } from "./Row";
+import styles from './ProjectCard.module.css';
 
 export const ProjectCard = ({ project }: { project: Project }) => {
     return (
@@ -26,9 +26,12 @@ export const ProjectCard = ({ project }: { project: Project }) => {
             </>
           )}
 
-          <Row>
-            <img src={`https://skillicons.dev/icons?i=${project.technicalStack.join(",")}`} />
-          </Row>
+
+            <img 
+              src={`https://skillicons.dev/icons?i=${project.technicalStack.join(",")}`} 
+              alt="Tech Stack"
+            />
+
 
           <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 mt-4">
             View Project
