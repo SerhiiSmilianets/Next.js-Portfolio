@@ -1,0 +1,26 @@
+.link {
+    color: var(--textcolor);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .link:hover > .linkText{
+    text-shadow: #ededed 0px 0px 10px;
+    transition: color 0.3s ease;
+  }
+
+  .link.active {
+    font-weight: bold;
+    color: #4a90e2;
+  }
+
+  @media (max-width: 768px) {
+    .link {
+        font-size: 0.875rem;
+    }
+  }
+  

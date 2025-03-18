@@ -1,6 +1,3 @@
-import { Column } from "@/components/Column";
-import "./projects.css";
-
 export default function Layout({
     children,
     projectsCarousel
@@ -9,12 +6,12 @@ export default function Layout({
     projectsCarousel: React.ReactNode
   }) {
     return (
-      <Column>
+      <div className="projects-layout">
         <div>
           <h1 className='page-title'>Projects</h1>
         </div>
           {projectsCarousel}
           {children}
-      </Column>
+      </div>
     )
   }

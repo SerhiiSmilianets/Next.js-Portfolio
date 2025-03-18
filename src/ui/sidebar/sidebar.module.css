@@ -1,0 +1,57 @@
+.sidebar {
+    height: calc(100vh - 60px);
+    top: 60px;
+    width: fit-content;
+
+    background-color: var(--navbackground);
+    color: var(--textcolor);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    overflow: hidden;
+    position: sticky;
+    z-index: 1;
+  }
+
+  .cvBtn {
+    align-self: anchor-center;
+  }
+
+  .showCVButton {
+    margin-top: 20px;
+    padding: 15px 10px;
+    width: max-content;
+    background-color: #2563EB;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-self: anchor-center;
+  }
+  
+  .showCVButton:hover {
+    background-color: #3B82F6
+  }
+
+  @media (max-width: 1024px) {
+    /* Tablet or smaller screens */
+    .sidebar {
+      width: fit-content;
+      min-height: auto;
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+        /* width: 100%; 
+        height: auto; 
+        padding: 10px; */
+        display: none;
+    }
+    
+    .showCVButton {
+        padding: 0.5rem 1rem;
+    }
+  }

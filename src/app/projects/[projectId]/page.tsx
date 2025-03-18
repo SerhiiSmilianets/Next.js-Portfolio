@@ -1,14 +1,15 @@
-import { getProject } from '../../utils/projectsUtils';
-import { ProjectCard } from '@/components/ProjectCard';
+import { getProject } from '../../lib/data';
+import { ProjectCard } from '@/ui/projects/projectCard/projectCard';
 
 export default async function ProjectDetailsPage({
     params,
-    searchParams
+    // searchParams
   }: {
-    searchParams: { [key: string]: string },
-    params: Promise<{ slug: string }>
+    // searchParams: { [key: string]: string },
+    params: Promise<{ projectId: string }>
   }) {
-    // const sparams = await searchParams;
+    // const queryParams = await searchParams;
+    // console.log(queryParams);
     // const { projectId } = sparams ;
     const { projectId } = await params;
     const project = await getProject(projectId)
