@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { NavLink } from '../navlink/navLink';
+import { NavLink } from '@/ui/sidebar/navlink/navLink';
 import styles from './sidebar.module.css';
 
 export const Sidebar: React.FC = () => {

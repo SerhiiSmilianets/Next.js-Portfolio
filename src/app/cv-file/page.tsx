@@ -1,4 +1,4 @@
-import styles from '@/styles/CVPage.module.css';
+import styles from './CVPage.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 

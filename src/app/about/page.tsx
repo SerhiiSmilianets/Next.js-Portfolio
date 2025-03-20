@@ -1,25 +1,18 @@
-'use client'
-
-import { useState, useEffect } from 'react';
 import styles from '@/ui/about/about.module.css';
-import { Experience } from '@/ui/about/experience/experience'
+import { WorkingExperience } from '@/ui/about/experience/experience'
+import {getExpYears} from '@/app/lib/dateHelper'
+import { getCompanies } from '@/app/lib/serverData';
+import {Company} from '@/interfaces';
 
-export default function About() {
-  const careerStartDate = new Date('2018-09-12');
-  const [experienceYears, setExperienceYears] = useState(0);
-  
-  useEffect(() => {
-    const currentDate = new Date();
-    const diff = currentDate.getTime() - careerStartDate.getTime();
-    const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
-    setExperienceYears(years);
-  }, []);
+export default async function About() {
+  const experienceYears = getExpYears();
+  const companies : Company[] = await getCompanies();
 
   return (
     <div>
       <h1 className='page-title'>About Me</h1>
 
-      <section className={styles.sectionContainer}>
+      <section className={styles.aboutSectionContainer}>
         <p>
           I’m a Software Engineer with over {experienceYears} years of experience working with Salesforce Commerce Cloud (SFCC) as both a Front-End and Back-End Developer. I started my career in front-end development, focusing on JavaScript, jQuery, and SCSS, but eventually transitioned into back-end development, learning everything on my own. Over time, I became a Full-Stack Developer, handling everything from UI styling to complex server-side integrations.
 
@@ -29,8 +22,8 @@ export default function About() {
         </p>
       </section>
 
+      <h2 className={styles.sectionTitle}>Skills</h2>
       <section className={styles.sectionContainer}>
-        <h2 className={styles.sectionTitle}>Skills</h2>
         <ul>
           <li><strong>Education:</strong> Specialist degree in Information Technology Odesa National Academy of Communications</li>
           <li><strong>Languages:</strong> English(B2+), Ukrainian(Native)</li>
@@ -39,22 +32,9 @@ export default function About() {
         </ul>
       </section>
 
+      <h2 className={styles.sectionTitle}>Work Experience</h2>
       <section className={styles.sectionContainer}>
-        <h2 className={styles.sectionTitle}>Work Experience</h2>
-        <ul>
-          <li>
-            <strong>EPAM Systems (Sephora ME):</strong> Developed custom hooks, managed data import/export jobs, and configured databases for Salesforce Commerce Cloud.
-          </li>
-          <li>
-            <strong>Emakina:</strong> Worked on projects for Muchachomalo, Hans Anders, Wolford, Mizuno, Floris van Bommel, and Bugaboo. Responsibilities included server-side solutions, bug fixes, integrations, and system updates.
-          </li>
-          <li>
-            <strong>Tryzens (Whittard):</strong> Implemented shipping schedules, customer service adaptations, and "Notify me later" logic.
-          </li>
-          <li>
-            <strong>OSF Digital:</strong> Contributed to projects for Sonae Fashion, Moleskine, Baccarat, Continente, Ubisoft, Etnia Barcelona, Bouclair, and Cigars. Roles ranged from front-end and back-end development to full-stack development, handling various responsibilities such as authentication, order management, page design, and bug fixing.
-          </li>
-        </ul>
+        <WorkingExperience companies={companies}/>
       </section>
     </div>
   );

@@ -1,4 +1,4 @@
-import { getProject } from '../../lib/data';
+import { getProject } from '../../lib/serverData';
 import { ProjectCard } from '@/ui/projects/projectCard/projectCard';
 
 export default async function ProjectDetailsPage({

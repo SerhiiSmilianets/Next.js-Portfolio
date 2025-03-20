@@ -19,3 +19,15 @@ export interface NavLinkProps {
     icon?: string;
     name: string;
 }
+
+export interface Company {
+    id: string;
+    companyName: string;
+    start_date: number;
+    end_date: number|string;
+    position: string;
+    projects: {
+        id: string;
+        project_name: string;
+    }[];
+}

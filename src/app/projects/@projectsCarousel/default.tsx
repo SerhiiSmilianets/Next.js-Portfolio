@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from 'next/link';
 import { Project } from '@/interfaces';
-import { getProjects } from '../../lib/data';
-import styles from "../projects.module.css";
+import { getProjects } from '../../lib/serverData';
+import styles from "@/ui/projects/projects.module.css";
 
 export default async function ProjectsCarouselDefault() {
     // console.log(projects)

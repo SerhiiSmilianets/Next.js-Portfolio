@@ -1,21 +1,19 @@
+'use client'
+
 import styles from "./experience.module.css"
+import {Company} from '@/interfaces';
 
-interface Company {
-    companyName: string;
-    startTime: number;
-    endTime: number|string;
-    period: string;
-    projects: string[];
-}
+import { CompanyComponent } from "./company/company";
 
-export const WorkingExperience = ()  => {
-
+export const WorkingExperience = ({companies} : {companies:Company[]})  => {
     return (
         <ul>
             {companies && companies.length && (
-                {companies.map((company : Company) => (
-                    <p><span className={styles.companyName}>{company.companyName}:</span></p>
-                ))}
+                <>
+                    {companies.map((company : Company) => (
+                        <CompanyComponent key={company.id} companyData={company}/>
+                    ))}
+                </>
             )}
         </ul>
     )
