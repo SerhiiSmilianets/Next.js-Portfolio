@@ -1,8 +1,4 @@
-'use client'
-
-import styles from "./experience.module.css"
 import {Company} from '@/interfaces';
-
 import { CompanyComponent } from "./company/company";
 
 export const WorkingExperience = ({companies} : {companies:Company[]})  => {

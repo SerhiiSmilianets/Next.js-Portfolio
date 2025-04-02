@@ -24,56 +24,6 @@
     },
     "companies" : [
         {
-            "id": "osf",
-            "companyName": "OSF Digital",
-            "start_date": 1535752800000,
-            "end_date": 1633039200000,
-            "position": "Salesforce Commerce Cloud Full Stack Developer",
-            "projects" : [
-                {
-                    "id": "cigars",
-                    "project_name": "Cigars"
-                },
-                {
-                    "id": "bouclair",
-                    "project_name": "Bouclair"
-                },
-                {
-                    "id": "etnia",
-                    "project_name": "Etnia Barcelona"
-                },
-                {
-                    "id": "ubisoft",
-                    "project_name": "Ubisoft"
-                },
-                {
-                    "id": "continente",
-                    "project_name": "Continente"
-                },
-                {
-                    "id": "baccarat",
-                    "project_name": "Baccarat"
-                },
-                {
-                    "id": "moleskine",
-                    "project_name": "Moleskine"
-                }
-            ]
-        },
-        {
-            "id": "tryzens",
-            "companyName": "Tryzens Global",
-            "start_date": 1633039200000,
-            "end_date": 1643670000000,
-            "position": "Senior Salesforce Commerce Cloud Full Stack Developer",
-            "projects" : [
-                {
-                    "id": "whittard",
-                    "project_name": "Whittard of Chelsea"
-                }
-            ]
-        },
-        {
             "id": "epam",
             "companyName": "EPAM Systems",
             "start_date": 1633039200000,
@@ -109,7 +59,65 @@
                     "project_name": "Sephora ME"
                 }
             ]
-        }
+        },
+        {
+            "id": "tryzens",
+            "companyName": "Tryzens Global",
+            "start_date": 1633039200000,
+            "end_date": 1643670000000,
+            "position": "Senior Salesforce Commerce Cloud Full Stack Developer",
+            "projects" : [
+                {
+                    "id": "whittard",
+                    "project_name": "Whittard of Chelsea"
+                }
+            ]
+        },
+        {
+            "id": "osf",
+            "companyName": "OSF Digital",
+            "start_date": 1535752800000,
+            "end_date": 1633039200000,
+            "position": "Salesforce Commerce Cloud Full Stack Developer",
+            "projects" : [
+                {
+                    "id": "cigars",
+                    "project_name": "Cigars"
+                },
+                {
+                    "id": "bouclair",
+                    "project_name": "Bouclair"
+                },
+                {
+                    "id": "etnia",
+                    "project_name": "Etnia Barcelona"
+                },
+                {
+                    "id": "ubisoft",
+                    "project_name": "Ubisoft"
+                },
+                {
+                    "id": "continente",
+                    "project_name": "Continente"
+                },
+                {
+                    "id": "baccarat",
+                    "project_name": "Baccarat"
+                },
+                {
+                    "id": "moleskine",
+                    "project_name": "Moleskine"
+                },
+                {
+                    "id": "zippy",
+                    "project_name": "Zippy"
+                },
+                {
+                    "id": "mo",
+                    "project_name": "Mo"
+                }
+            ]
+        }  
     ],
     "projects":[
         {
@@ -133,7 +141,7 @@
         {
             "id": "muchachomalo",
             "project_name": "Muchachomalo",
-            "start_date": 1675200000000,
+            "start_date": 1675209600000,
             "end_date": 1693843200000,
             "link": "https://www.muchachomalo.com",
             "logo": "muchachomalo.svg",
@@ -154,7 +162,7 @@
         {
             "id": "hansanders",
             "project_name": "Hans Anders",
-            "start_date": 1675200000000,
+            "start_date": 1675209600000,
             "end_date": 1693843200000,
             "link": "https://www.hansanders.nl/",
             "logo": "hansanders.png",
@@ -171,7 +179,7 @@
         {
             "id": "florisvanbommel",
             "project_name": "Floris van Bommel",
-            "start_date": 1675200000000,
+            "start_date": 1675209600000,
             "end_date": 1693843200000,
             "link": "https://int.florisvanbommel.com/",
             "logo": "florisvanbommel.svg",
@@ -189,7 +197,7 @@
         {
             "id": "mizuno",
             "project_name": "Mizuno",
-            "start_date": 1675200000000,
+            "start_date": 1675209600000,
             "end_date": 1693843200000,
             "link": "https://emea.mizuno.com/",
             "logo": "mizuno.svg",
@@ -209,7 +217,7 @@
         {
             "id": "wolford",
             "project_name": "Wolford",
-            "start_date": 1675200000000,
+            "start_date": 1675209600000,
             "end_date": 1693843200000,
             "link": "https://www.wolford.com/",
             "logo": "wolford.svg",
@@ -228,7 +236,7 @@
             "id": "bugaboo",
             "project_name": "Bugaboo",
             "start_date": 1640995200000,
-            "end_date": 1675200000000,
+            "end_date": 1677542400000,
             "link": "https://www.bugaboo.com/",
             "logo": "bugaboo.svg",
             "general_information": "Bugaboo is a Dutch company known for designing and manufacturing high-quality, innovative strollers and baby products. Founded in 1994, Bugaboo is renowned for its stylish, functional, and durable strollers that offer comfort and ease for both parents and children. The brand is known for its modular stroller systems that can be customized with various accessories and features. Bugaboo’s products are popular worldwide and are recognized for their advanced engineering, smooth maneuverability, and sleek design.",
@@ -269,6 +277,44 @@
             "technicalStack": ["js", "html", "git", "css", "npm"]
         },
         {
+            "id": "zippy",
+            "project_name": "Zippy",
+            "start_date": 1622505600000,
+            "end_date":  1635638400000,
+            "link": "https://zippyonline.com",
+            "logo": "zippy.png",
+            "general_information": "Zippy is a Portuguese children's clothing brand founded in 2004, specializing in affordable and stylish apparel, footwear, and accessories for babies and kids. Part of the Sonae group, Zippy focuses on comfortable, functional, and trendy designs, catering to families looking for quality at competitive prices. The brand operates in multiple countries, offering both in-store and online shopping options, with a strong emphasis on practicality and sustainability in children's fashion.",
+            "responsibilities": [
+                "Extended and fixed Endless Aisle features, resolving issues that could be handled without a MacBook.",
+                "Implemented a new Category Listing Page (CLP) with completely new tile logic, enhancing the product browsing experience.",
+                "Fixed various bugs and visual issues to improve the UI/UX of the platform.",
+                "Developed video logic for Product Detail Pages (PDP), enabling a more interactive product showcase.",
+                "Updated carousel functionality to improve user interaction and display performance."
+            ],
+            "working_position": "Salesforce Commerce Cloud Full-Stack Developer",
+            "technologiesUsed": ["OMS", "VLL", "Endless Aisle", "Salesforce Commerce Cloud", "SFRA", "React"],
+            "technicalStack": ["js", "html", "git", "npm", "react"]
+        },
+        {
+            "id": "mo",
+            "project_name": "Mo",
+            "start_date": 1622505600000,
+            "end_date":  1635638400000,
+            "link": "https://mo-online.com",
+            "logo": "mo.svg",
+            "general_information": "MO is a Portuguese fashion brand under the Sonae group, specializing in affordable and stylish clothing for men, women, and children. Known for its practical, modern, and comfortable designs, MO offers a wide range of apparel, footwear, and accessories for everyday wear. The brand focuses on providing quality fashion at accessible prices, catering to families and individuals looking for versatile wardrobe options. MO operates both physical stores and an online platform, expanding its presence in Portugal and internationally.",
+            "responsibilities": [
+                "Extended and fixed Endless Aisle features, resolving issues that could be handled without a MacBook.",
+                "Implemented a new Category Listing Page (CLP) with completely new tile logic, enhancing the product browsing experience.",
+                "Fixed various bugs and visual issues to improve the UI/UX of the platform.",
+                "Developed video logic for Product Detail Pages (PDP), enabling a more interactive product showcase.",
+                "Updated carousel functionality to improve user interaction and display performance."
+            ],
+            "working_position": "Salesforce Commerce Cloud Full-Stack Developer",
+            "technologiesUsed": ["OMS", "VLL", "Endless Aisle", "Salesforce Commerce Cloud", "SFRA", "React"],
+            "technicalStack": ["js", "html", "git", "npm", "react"]
+        },
+        {
             "id": "moleskine",
             "project_name": "Moleskine",
             "start_date": 1614556800000,
@@ -291,7 +337,7 @@
             "id": "baccarat",
             "project_name": "Baccarat",
             "start_date": 1612137600000,
-            "end_date": 1614556800000,
+            "end_date": 1617148800000,
             "link": "https://www.baccarat.com/",
             "logo": "baccarat.svg",
             "general_information": "Baccarat is a luxury French brand established in 1764, renowned for its high-quality crystal glassware, decorative items, and jewelry. The brand is famous for its exquisite craftsmanship, producing everything from elegant chandeliers and vases to fine crystal glasses and ornaments. Baccarat collaborates with renowned designers and artists, blending traditional glassmaking techniques with modern design. The brand is synonymous with sophistication, luxury, and timeless beauty, offering premium products that are highly sought after by collectors and connoisseurs.",
@@ -307,8 +353,8 @@
         {
             "id": "continente",
             "project_name": "Continente",
-            "start_date": 1577846400000,
-            "end_date": 1612137600000,
+            "start_date": 1575158400000,
+            "end_date": 1614470400000,
             "link": "https://www.continente.pt",
             "logo": "continente.svg",
             "general_information": "Continente is a leading supermarket chain in Portugal, owned by the Sonae Group. Founded in 1985, it offers a wide range of products, including groceries, fresh produce, household items, and electronics. Continente is known for its commitment to quality, competitive pricing, and a strong focus on customer satisfaction. The brand operates numerous stores across Portugal and has an online shopping platform, providing convenience and a broad selection of goods to its customers. Continente also promotes sustainability and environmental responsibility in its operations.",
@@ -333,7 +379,7 @@
             "id": "ubisoft",
             "project_name": "Ubisoft",
             "start_date": 1564617600000,
-            "end_date": 1575129600000,
+            "end_date": 1577750400000,
             "link": "https://www.ubisoft.com",
             "logo": "ubisoft.svg",
             "general_information": "Ubisoft is a leading French video game company founded in 1986, known for creating and publishing some of the world’s most popular video game franchises. These include **Assassin’s Creed**, **Far Cry**, **Tom Clancy’s Rainbow Six**, and **Watch Dogs**. Ubisoft is recognized for its focus on immersive open-world games, engaging narratives, and cutting-edge graphics. The company operates worldwide, with studios in various countries, and is known for its commitment to innovation, creativity, and developing games for multiple platforms.",
@@ -348,8 +394,8 @@
         {
             "id": "etnia",
             "project_name": "Etnia Barcelona",
-            "start_date": 1561382400000,
-            "end_date": 1575129600000,
+            "start_date": 1559347200000,
+            "end_date": 1567209600000,
             "link": "https://www.etniabarcelona.com/",
             "logo": "etnia.svg",
             "general_information": "Etnia Barcelona is a Spanish eyewear brand founded in 2001 by David Pellicer. The company draws inspiration from Barcelona's vibrant culture, offering a diverse range of sunglasses and optical frames that blend vintage aesthetics with contemporary design. Etnia Barcelona collaborates with renowned artists and institutions, resulting in unique collections that celebrate art and creativity. Their products are crafted with high-quality materials, including mineral glass lenses and natural acetate, ensuring durability and comfort. The brand also emphasizes sustainability, working towards eco-friendly packaging and production processes. Etnia Barcelona's eyewear is available worldwide, with flagship stores in Barcelona and a strong online presence.",
