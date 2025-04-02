@@ -1,8 +1,10 @@
 import Image from "next/image";
 import { Project } from '@/interfaces';
-import styles from './ProjectCard.module.css';
+import {workingPeriod} from '@/app/lib/dateHelper';
+import styles from './projectCard.module.css';
 
 export const ProjectCard = ({ project }: { project: Project }) => {
+  const {start, end} = workingPeriod(project.start_date, project.end_date)
     return (
       <div className="flex flex-row items-center justify-items-start p-4">
         {project.logo && 
@@ -37,6 +39,8 @@ export const ProjectCard = ({ project }: { project: Project }) => {
             View Project
           </a>
         </div>
+
+        <p className={styles.list}>Working period: <span>{start}</span> - <span>{end}</span></p>
       </div>
     );
 }
