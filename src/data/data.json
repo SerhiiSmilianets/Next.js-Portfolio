@@ -156,7 +156,7 @@
               ],
             "working_position": "Salesforce Commerce Cloud Back-End Developer",
             "technologiesUsed": ["SFCC", "Salesforce Commerce Cloud", "SFRA", "Adyen", "GA4", "Jobs"],
-            "technicalStack": ["js", "html", "git", "npm"]
+            "technicalStack": ["js", "html", "git", "npm", "jQuery"]
               
         },
         {
@@ -174,7 +174,7 @@
               ],
             "working_position": "Salesforce Commerce Cloud Back-End Developer",
             "technologiesUsed": ["SFCC", "SFRA", "Salesforce Commerce Cloud", "Jobs"],
-            "technicalStack": ["js", "html", "git", "npm"]
+            "technicalStack": ["js", "html", "git", "npm", "jQuery"]
         },              
         {
             "id": "florisvanbommel",
@@ -192,7 +192,7 @@
             ],
             "working_position": "Salesforce Commerce Cloud Back-End Developer",
             "technologiesUsed": ["SFCC", "Salesforce Commerce Cloud", "Site Genesis", "Jobs"],
-            "technicalStack": ["js", "html", "git", "npm"]
+            "technicalStack": ["js", "html", "git", "npm", "jQuery"]
         },
         {
             "id": "mizuno",
@@ -212,7 +212,7 @@
               ],
             "working_position": "Salesforce Commerce Cloud Back-End Developer",
             "technologiesUsed": ["SFCC", "Salesforce Commerce Cloud", "SFRA", "Adyen", "Jobs"],
-            "technicalStack": ["js", "html", "git", "npm"]
+            "technicalStack": ["js", "html", "git", "npm", "jQuery"]
         },
         {
             "id": "wolford",
@@ -230,7 +230,7 @@
               ],
             "working_position": "Salesforce Commerce Cloud Back-End Developer",
             "technologiesUsed": ["SFCC", "Salesforce Commerce Cloud", "Site Genesis", "Jobs"],
-            "technicalStack": ["js", "html", "git", "npm"]
+            "technicalStack": ["js", "html", "git", "npm", "jQuery"]
         },
         {
             "id": "bugaboo",
@@ -274,7 +274,7 @@
               ],
             "working_position": "Salesforce Commerce Cloud Full-Stack Developer",
             "technologiesUsed": ["Services", "Customer Service Center", "3-d party client side", "Jobs", "Salesforce Commerce Cloud", "Site Genesis"],
-            "technicalStack": ["js", "html", "git", "css", "npm"]
+            "technicalStack": ["js", "html", "git", "css", "npm", "jQuery"]
         },
         {
             "id": "zippy",
@@ -293,7 +293,7 @@
             ],
             "working_position": "Salesforce Commerce Cloud Full-Stack Developer",
             "technologiesUsed": ["OMS", "VLL", "Endless Aisle", "Salesforce Commerce Cloud", "SFRA", "React"],
-            "technicalStack": ["js", "html", "git", "npm", "react"]
+            "technicalStack": ["js", "html", "git", "npm", "react", "css", "jQuery"]
         },
         {
             "id": "mo",
@@ -312,7 +312,7 @@
             ],
             "working_position": "Salesforce Commerce Cloud Full-Stack Developer",
             "technologiesUsed": ["OMS", "VLL", "Endless Aisle", "Salesforce Commerce Cloud", "SFRA", "React"],
-            "technicalStack": ["js", "html", "git", "npm", "react"]
+            "technicalStack": ["js", "html", "git", "npm", "react", "css", "jQuery"]
         },
         {
             "id": "moleskine",
@@ -331,7 +331,7 @@
               ],
             "working_position": "Salesforce Commerce Cloud Back-End Developer",
             "technologiesUsed": ["OMS", "MBWay", "Salesforce Commerce Cloud", "SFRA"],
-            "technicalStack": ["js", "html", "git", "npm"]
+            "technicalStack": ["js", "html", "git", "npm", "jQuery"]
         },
         {
             "id": "baccarat",
@@ -348,7 +348,7 @@
               ],
             "working_position": "Salesforce Commerce Cloud Back-End Developer",
             "technologiesUsed": ["Salesforce Commerce Cloud", "Site Genesis"],
-            "technicalStack": ["js", "html", "git", "npm"]
+            "technicalStack": ["js", "html", "git", "npm", "jQuery"]
         },
         {
             "id": "continente",
@@ -373,7 +373,7 @@
               
             "working_position": "Salesforce Commerce Cloud Full-Stack Developer",
             "technologiesUsed": ["OMS", "Identity Manager", "EGOI", "Transaction Emails", "MDM", "VLL", "MBWay", "PayPal", "GTM", "Google Geolocation", "Salesforce Commerce Cloud", "SFRA"],
-            "technicalStack": ["js", "html", "git", "npm", "css", "vue"]
+            "technicalStack": ["js", "html", "git", "npm", "css", "vue", "jQuery"]
         },
         {
             "id": "ubisoft",
@@ -389,7 +389,7 @@
               ],
             "working_position": "Salesforce Commerce Cloud Back-End Developer",
             "technologiesUsed": ["Zuora", "GTM", "Salesforce Commerce Cloud", "Site Genesis", "Pipelines"],
-            "technicalStack": ["js", "html", "git", "npm"]
+            "technicalStack": ["js", "html", "git", "npm", "jQuery"]
         },
         {
             "id": "etnia",
@@ -407,7 +407,7 @@
               ],
             "working_position": "Salesforce Commerce Cloud Full-Stack Developer",
             "technologiesUsed": ["Salesforce Commerce Cloud", "Site Genesis"],
-            "technicalStack": ["js", "html", "git", "npm", "css"]
+            "technicalStack": ["js", "html", "git", "npm", "css", "jQuery"]
         },
         {
             "id": "bouclair",
@@ -424,7 +424,7 @@
               ],
             "working_position": "Salesforce Commerce Cloud Back-End Developer",
             "technologiesUsed": ["Salesforce Commerce Cloud", "Site Genesis", "SFRA"],
-            "technicalStack": ["js", "html", "git", "npm"]
+            "technicalStack": ["js", "html", "git", "npm", "jQuery"]
         },
         {
             "id": "cigars",
@@ -444,7 +444,7 @@
               
             "working_position": "Salesforce Commerce Cloud Back-End Developer",
             "technologiesUsed": ["Salesforce Commerce Cloud", "Site Genesis"],
-            "technicalStack": ["js", "html", "git", "npm"]
+            "technicalStack": ["js", "html", "git", "npm", "jQuery"]
         }
     ]
 }

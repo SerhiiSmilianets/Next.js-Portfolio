@@ -1,15 +1,15 @@
 import { headers as nextHeaders } from 'next/headers';
 let cachedData: any = null;
 let cacheTimestamp: number = 0;
-// const CACHE_EXPIRATION_TIME = 86400 * 1000; // Cache expires in 24 hours (86400 seconds)
-const CACHE_EXPIRATION_TIME = 1000
+const CACHE_EXPIRATION_TIME = 86400 * 1000; // Cache expires in 24 hours (86400 seconds)
+// const CACHE_EXPIRATION_TIME = 1000
 
 export async function getData() {
   const currentTime = Date.now();
 
   if (cachedData && currentTime - cacheTimestamp < CACHE_EXPIRATION_TIME) {
     // Return cached data if it hasn't expired
-    console.log("cached data is used");
+    console.log("server cached data is used");
     return cachedData;
   }
 
@@ -31,7 +31,7 @@ export async function getData() {
   cachedData = data;
   cacheTimestamp = currentTime;
   
-  console.log("non-cached data is used");
+  console.log("server non-cached data is used");
   return data;
 }
 

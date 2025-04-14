@@ -6,7 +6,7 @@ import styles from './projectCard.module.css';
 export const ProjectCard = ({ project }: { project: Project }) => {
   const {start, end} = workingPeriod(project.start_date, project.end_date)
     return (
-      <div className="flex flex-row items-center justify-items-start p-4">
+      <div>
         {project.logo && 
           <Image src={`/projectsLogos/${project.logo}`} 
                 alt={project.project_name} 
