@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Link from 'next/link';
 import { Project } from '@/interfaces';
-import { getProjects } from '../../lib/serverData';
-import styles from "@/ui/projects/projects.module.css";
+import { getProjects } from '@/lib/serverData';
+import styles from "@/styles/modules/projects.module.css";
 
 export default async function ProjectsCarouselDefault() {
-    // console.log(projects)
     const projects = await getProjects(); // Fetch data before rendering
     
     return (
@@ -18,7 +17,6 @@ export default async function ProjectsCarouselDefault() {
                         <Link 
                             href={{
                                 pathname: `/projects/${project.id}`,
-                                // query: { projectId: project.id }
                             }}
                             prefetch={true}
                             key={project.id + "-logo"} 

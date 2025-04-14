@@ -1,10 +1,10 @@
-import { WorkingExperience } from '@/ui/about/experience/experience'
-import {getExpYears} from '@/app/lib/dateHelper'
-import { getCompanies } from '@/app/lib/serverData';
+import { WorkingExperience } from '@/components/about/experience/experience'
+import {getExpYears} from '@/lib/dateHelper'
+import { getCompanies } from '@/lib/serverData';
 import {Company} from '@/interfaces';
 import Image from 'next/image';
 import Avatar from '../../../public/avatar.jpg';
-import '@/ui/about/about.css';
+import '@/styles/about.css';
 
 export default async function About() {
   const experienceYears = getExpYears();

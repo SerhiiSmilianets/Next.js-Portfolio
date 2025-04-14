@@ -1,5 +1,5 @@
-import { getProject } from '../../lib/serverData';
-import { ProjectCard } from '@/ui/projects/projectCard/projectCard';
+import { getProject } from '../../../lib/serverData';
+import { ProjectCard } from '@/components/projects/projectCard/projectCard';
 
 export default async function ProjectDetailsPage({
     params,
