@@ -1,0 +1,35 @@
+/* @import './styles/animations.css'; */
+    
+.experienceContainer {
+    display: flex;
+    flex-direction: column;
+    -webkit-animation: fadeIn 0.5s ease-in-out both;
+    -moz-animation: fadeIn 0.5s ease-in-out both;
+    animation: fadeIn 0.5s ease-in-out both;
+}
+
+.companyTab {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0;
+    border: 2px solid var(--buttonbackground);
+    border-bottom: none;
+    color: var(--textcolor);
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.companyTab.active {
+    background-color: var(--buttonbackground);
+    color: var(--textcolor);
+}
+
+.companyTab:hover {
+    background-color: var(--buttonhoverbackground);
+    color: var(--textcolor);
+}
+
