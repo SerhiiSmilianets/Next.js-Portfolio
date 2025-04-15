@@ -1,5 +1,6 @@
 .projectsCarousel {
   display: flex;
+  width: 100%;
   gap: 8px;
 }
 .projectLogoContainer {

@@ -1,3 +1,3 @@
-export default async function ProjectsPage() {
+export default async function ProjectsListPage() {
     return null
 }

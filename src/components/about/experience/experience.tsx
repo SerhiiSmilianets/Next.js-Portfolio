@@ -12,7 +12,6 @@ export const WorkingExperience = ({companies} : {companies:Company[]})  => {
     const [isLoading, setIsLoading] = useState<boolean>(true);
 
     useEffect(() => {
-        console.log("Companies data: ", companies);
         try{
             setCompaniesData(companies);
             setSelectedCompany(companies[0] || null);
