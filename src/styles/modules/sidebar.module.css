@@ -1,7 +1,7 @@
 .sidebar {
     height: calc(100vh - 60px);
     top: 60px;
-    width: fit-content;
+    width: 150px;
     background-color: var(--navbackground);
     color: var(--textcolor);
     display: flex;

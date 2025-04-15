@@ -1,0 +1,57 @@
+.projects-carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: calc(100vw - 200px);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.swiper {
+  max-width: 100%;
+  height: 100%;
+  padding: 20px;
+  z-index: 0;
+}
+
+.swiper-wrapper{
+    z-index: 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  transform: scale(0.8);
+  transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide-active {
+  transform: scale(1.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-logo-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(229 231 235);
+    /* background-color: var(--cardbackground); */
+    border-radius: 5%;
+    /* box-shadow: var(--cardshadow); */
+}
+
+.project-logo {
+    padding: 1rem;
+    border-radius: 5%;
+    background-color: rgb(234, 234, 234);
+}
+
+@media (max-width: 768px) {
+    .projects-carousel-container {
+        max-width: calc(100vw - 50px);
+    }
+}

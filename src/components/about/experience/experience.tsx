@@ -4,7 +4,7 @@ import { Company } from '@/interfaces';
 import { CompanyComponent } from "./company/company";
 import { useState, useEffect } from 'react';
 // import "@/app/globals.css"
-import styles from "./experience.module.css"
+import styles from "@/styles/modules/experience.module.css"
 
 export const WorkingExperience = ({companies} : {companies:Company[]})  => {
     const [companiesData, setCompaniesData] = useState<Company[]>([]);
@@ -12,7 +12,6 @@ export const WorkingExperience = ({companies} : {companies:Company[]})  => {
     const [isLoading, setIsLoading] = useState<boolean>(true);
 
     useEffect(() => {
-        console.log("Companies data: ", companies);
         try{
             setCompaniesData(companies);
             setSelectedCompany(companies[0] || null);
@@ -29,7 +28,7 @@ export const WorkingExperience = ({companies} : {companies:Company[]})  => {
     }
 
     return (
-        <div className={styles.experienceContainer}>
+        <div className={`${styles.experienceContainer} animate-fadeIn`}>
             <div className="flex overflow-x-auto">
                 {isLoading ? (
                         <div className="flex items-center justify-center w-full h-full text-2xl font-bold text-gray-500">

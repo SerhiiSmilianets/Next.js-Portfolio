@@ -1,6 +1,6 @@
 import {Company} from '@/interfaces';
-import {workingPeriod} from '@/app/lib/dateHelper';
-import styles from "./company.module.css"
+import {workingPeriod} from '@/lib/dateHelper';
+import styles from "@/styles/modules/company.module.css"
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 

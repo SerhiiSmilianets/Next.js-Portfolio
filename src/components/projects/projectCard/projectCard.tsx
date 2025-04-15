@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Project } from '@/interfaces';
-import {workingPeriod} from '@/app/lib/dateHelper';
-import styles from './projectCard.module.css';
+import {workingPeriod} from '@/lib/dateHelper';
+import styles from '@/styles/modules/projects.module.css';
 
 export const ProjectCard = ({ project }: { project: Project }) => {
   const {start, end} = workingPeriod(project.start_date, project.end_date)

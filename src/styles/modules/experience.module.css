@@ -1,11 +1,6 @@
-/* @import './styles/animations.css'; */
-    
 .experienceContainer {
     display: flex;
     flex-direction: column;
-    -webkit-animation: fadeIn 0.5s ease-in-out both;
-    -moz-animation: fadeIn 0.5s ease-in-out both;
-    animation: fadeIn 0.5s ease-in-out both;
 }
 
 .companyTab {

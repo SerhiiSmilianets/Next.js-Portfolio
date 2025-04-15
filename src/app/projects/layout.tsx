@@ -1,16 +1,16 @@
 export default function Layout({
     children,
-    projectsCarousel
+    projectsList
   }:{
     children: React.ReactNode
-    projectsCarousel: React.ReactNode
+    projectsList: React.ReactNode
   }) {
     return (
       <div className="projects-layout">
         <div>
           <h1 className='page-title'>Projects</h1>
         </div>
-          {projectsCarousel}
+          {projectsList}
           {children}
       </div>
     )
