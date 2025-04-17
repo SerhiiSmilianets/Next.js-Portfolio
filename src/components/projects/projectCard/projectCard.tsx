@@ -1,46 +1,53 @@
-import Image from "next/image";
+'use client'
+
 import { Project } from '@/interfaces';
 import {workingPeriod} from '@/lib/dateHelper';
 import styles from '@/styles/modules/projects.module.css';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export const ProjectCard = ({ project }: { project: Project }) => {
   const {start, end} = workingPeriod(project.start_date, project.end_date)
     return (
-      <div>
-        {project.logo && 
-          <Image src={`/projectsLogos/${project.logo}`} 
-                alt={project.project_name} 
-                className="bg-gray-200 project-logo" 
-                width={150}
-                height={150}
-          />
-        }
-        <div className="flex flex-col justify-center pl-6 p-6">
-          <h3 className="text-2xl font-bold mt-4">{project.project_name}</h3>
-          <p className="text-lg mt-4">{project.general_information}</p>
+      <AnimatePresence mode="wait">
+        <motion.div className={styles.projectContainer}
+          key={project.id}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          <h3 className={styles.projectName}>{project.project_name}</h3>
 
+          <p className={styles.projectParagraph}>{project.general_information}</p>
+
+          <p className={styles.projectParagraph}><span className={styles.projectParagraphTitle}>Working period: </span> <span>{start}</span> - <span>{end}</span></p>
+
+          <p className={styles.projectParagraph}><span className={styles.projectParagraphTitle}>Role: </span><span>{project.role}</span></p>
+
+          <p className={styles.projectParagraph}><span className={styles.projectParagraphTitle}>Team size: </span><span>{project.team_size}</span></p>
+
+          {project.technologiesUsed && project.technologiesUsed.length > 0 && (
+              <p className={styles.projectParagraph}><span className={styles.projectParagraphTitle}>Technologies: </span><span>{project.technologiesUsed.join(', ')}</span></p>
+          )}
+
+          {project.technicalStack && project.technicalStack.length > 0 && (
+            <p className={styles.projectParagraph}><span className={styles.projectParagraphTitle}>Technical Stack: </span><span>{project.technicalStack.join(', ')}</span></p>
+          )}
+          
           {project.responsibilities && project.responsibilities.length > 0 && (
             <>
-              <h4 className="text-lg mt-4">Responsibilities:</h4>
+              <p className={styles.projectParagraph}><span className={styles.projectParagraphTitle}>Responsibilities:</span></p>
               {project.responsibilities.map((responsibility: string, index: number) => (
-                <li key={index} className="text-lg mt-4">{responsibility}</li>
+                <li key={index} className={styles.projectParagraph}>{responsibility}</li>
               ))}
             </>
           )}
 
-
-            <img 
-              src={`https://skillicons.dev/icons?i=${project.technicalStack.join(",")}`} 
-              alt="Tech Stack"
-            />
-
-
-          <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 mt-4">
+          <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
             View Project
           </a>
-        </div>
-
-        <p className={styles.list}>Working period: <span>{start}</span> - <span>{end}</span></p>
-      </div>
+        </motion.div>
+      </AnimatePresence>
+        
     );
 }

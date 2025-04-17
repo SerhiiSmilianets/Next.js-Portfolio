@@ -76,7 +76,7 @@
   /* Print Styles */
   @media print {
     /* Prevent overflow and ensure everything fits on the page */
-    body {
+    .body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 20px;

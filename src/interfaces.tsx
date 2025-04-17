@@ -7,11 +7,10 @@ export interface Project {
     logo: string;
     general_information: string;
     responsibilities: string[];
-    technologies: string[];
-    team_size: number;
-    working_position: string;
+    technologiesUsed: string[];
+    team_size: number|string;
+    role: string;
     technicalStack: string[];
-    projectType: string;
 }
 
 export interface NavLinkProps {
@@ -30,4 +29,38 @@ export interface Company {
         id: string;
         project_name: string;
     }[];
+}
+
+export interface PersonalInfo {
+    name: string;
+    mainTitle: string;
+    secondaryTitles: string[];
+    email: string;
+    phone: string;
+    education: string;
+    educationPlace: string;
+}
+
+export interface Skills {
+    skillStack: string[];
+    tools: string[];
+    databases: string[];
+    other: string[];
+}
+
+export interface ContactInfo {
+    email: string;
+    phone: string;
+    telegram: string;
+    linkedin: string;
+    facebook: string;
+    instagram: string;
+}
+
+export interface CachedData {
+    personalInfo: PersonalInfo;
+    skills: Skills;
+    contactInfo: ContactInfo;
+    companies: Company[];
+    projects: Project[];
 }
