@@ -5,11 +5,12 @@ import Link from 'next/link';
 import { Project } from '@/interfaces';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperType } from 'swiper';
-import { Navigation, Pagination, Autoplay, Keyboard, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, Keyboard, A11y, EffectCoverflow } from 'swiper/modules';
 import { useParams, useRouter } from 'next/navigation'
 import { useEffect, useRef, memo } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
+// import 'swiper/css/effect-coverflow';
 // import 'swiper/css/pagination';
 import '@/styles/projectsCarousel.css'; // Import your custom styles for the carousel
 
@@ -18,11 +19,13 @@ const ProjectsCarouselComponent = ({ projects }: { projects: Project[] }) => {
   const swiperRef = useRef<SwiperType | null>(null);
   const projectId = params.projectId;
   const router = useRouter()
-  console.log("carousel")
+  //console.log("carousel")
 
   useEffect(() => {
     let slideIndex = 0;
+    //console.log("projectId", projectId)
     if (projectId) {
+      //console.log("projectId inside", projectId)
       // Find the index of the projectId in the projects array
       slideIndex = projects.map(project => project.id).indexOf(projectId as string);
     }
@@ -37,11 +40,15 @@ const ProjectsCarouselComponent = ({ projects }: { projects: Project[] }) => {
     const activeIndex = swiper.activeIndex;
     const activeSlideData = projects[activeIndex];
 
-    // console.log("activeSlideData", activeSlideData.id);
+    console.log("activeSlideData", activeSlideData.id);
 
-    if (activeSlideData.id !== projectId) {
-      router.push(`/projects/${activeSlideData.id}`);
+    if (activeSlideData.id === projectId) {
+      return;
     }
+
+    // if (activeSlideData.id !== projectId) {
+      router.push(`/projects/${activeSlideData.id}`);
+    // }
   }
 
   return (
@@ -52,11 +59,12 @@ const ProjectsCarouselComponent = ({ projects }: { projects: Project[] }) => {
           swiperRef.current = swiper;
           handleSlideChange(swiper);
         }}
-        onSlideChange={(swiper) => {
-          handleSlideChange(swiper);
-        }}
-        modules={[Navigation, Pagination, Autoplay, Keyboard, A11y]}
+        // onSlideChange={(swiper) => {
+        //   handleSlideChange(swiper);
+        // }}
+        modules={[Navigation, Keyboard]}
         // spaceBetween={10}
+        // effect={'coverflow'}
         slidesPerView={1}
         navigation
         keyboard={{ enabled: true }}

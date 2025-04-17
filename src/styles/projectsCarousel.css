@@ -26,6 +26,7 @@
   height: auto;
   transform: scale(0.8);
   transition: transform 0.3s ease-in-out;
+  user-select: none;
 }
 
 .swiper-slide-active {

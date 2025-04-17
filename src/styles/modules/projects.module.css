@@ -1,17 +1,16 @@
-.projectsCarousel {
+.projectContainer {
   display: flex;
-  width: 100%;
-  gap: 8px;
-}
-.projectLogoContainer {
-  display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: start;
   justify-content: center;
-  background-color: rgb(229 231 235);
+  gap: 10px;
 }
 
-.projectLogo {
-  padding: 1rem;
-  border-radius: 5%;
-  background-color: rgb(234, 234, 234);
+.projectName {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--titlecolor);
+  text-shadow: var(--titleshadow);
+  text-transform: capitalize;
 }
