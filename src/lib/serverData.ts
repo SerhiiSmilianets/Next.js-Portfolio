@@ -1,5 +1,7 @@
 import { headers as nextHeaders } from 'next/headers';
-let cachedData: any = null;
+import { CachedData } from '@/interfaces'
+
+let cachedData: CachedData | null = null;
 let cacheTimestamp: number = 0;
 const CACHE_EXPIRATION_TIME = 86400 * 1000; // Cache expires in 24 hours (86400 seconds)
 // const CACHE_EXPIRATION_TIME = 1000 // 1 second for testing

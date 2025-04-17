@@ -4,15 +4,10 @@ import { ProjectsCarousel } from "@/components/projects/projectsCarousel/project
 
 export default async function ProjectsListDefault() {
     const projects = await getProjects(); // Fetch data before rendering
-    console.log("default")
-    
-    return (
-        <>
-            {!projects || !projects.length ? (
-            <p>No projects</p>
-            ) : (
-                <ProjectsCarousel projects={projects}/>
-            )}
-        </>
-    );
+
+    if (!projects || projects.length === 0) {
+        return <p>No projects</p>;
+    }
+
+    return <ProjectsCarousel projects={projects}/>
 }
