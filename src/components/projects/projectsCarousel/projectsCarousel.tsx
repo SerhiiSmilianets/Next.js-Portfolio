@@ -5,20 +5,28 @@ import Link from 'next/link';
 import { Project } from '@/interfaces';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperType } from 'swiper';
-import { Navigation, Pagination, Autoplay, Keyboard, A11y } from 'swiper/modules';
+import { Navigation, Keyboard} from 'swiper/modules';
 import { useParams, useRouter } from 'next/navigation'
 import { useEffect, useRef, memo } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
 import '@/styles/projectsCarousel.css'; // Import your custom styles for the carousel
 
 const ProjectsCarouselComponent = ({ projects }: { projects: Project[] }) => {
   const params = useParams();
-  const swiperRef = useRef<SwiperType | null>(null);
   const projectId = params.projectId;
-  const router = useRouter()
-  console.log("carousel")
+
+  const swiperRef = useRef<SwiperType | null>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  
+  const router = useRouter();
+
+  useEffect(() => {
+    if (projects && projects.length > 0 && !projectId) {
+      router.replace(`/projects/${projects[0].id}`);
+    }
+
+  }, [projectId, projects, router]);
 
   useEffect(() => {
     let slideIndex = 0;
@@ -29,19 +37,25 @@ const ProjectsCarouselComponent = ({ projects }: { projects: Project[] }) => {
     // If projectId is not found, set slideIndex to 0 (first slide)
     // Check if the projectId exists in the projects array
     if (slideIndex !== -1 && swiperRef.current) {
-      swiperRef.current.slideTo(slideIndex, 500); // no animation
+      swiperRef.current.slideTo(slideIndex, 500);
     }
   }, [projectId, projects]);
 
   const handleSlideChange = (swiper: SwiperType) => {
-    const activeIndex = swiper.activeIndex;
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    } 
+    swiperRef.current = swiper;
+    const activeIndex = swiperRef.current.activeIndex;
     const activeSlideData = projects[activeIndex];
 
-    // console.log("activeSlideData", activeSlideData.id);
-
-    if (activeSlideData.id !== projectId) {
-      router.push(`/projects/${activeSlideData.id}`);
+    if (activeSlideData.id === projectId) {
+      return;
     }
+    // Update the URL with the new projectId
+    timeoutRef.current = setTimeout(() => {
+      router.push(`/projects/${activeSlideData.id}`);
+    }, 100);
   }
 
   return (
@@ -50,30 +64,22 @@ const ProjectsCarouselComponent = ({ projects }: { projects: Project[] }) => {
         speed={500}
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
-          handleSlideChange(swiper);
         }}
         onSlideChange={(swiper) => {
           handleSlideChange(swiper);
         }}
-        modules={[Navigation, Pagination, Autoplay, Keyboard, A11y]}
-        // spaceBetween={10}
+        modules={[Navigation, Keyboard]}
         slidesPerView={1}
         navigation
         keyboard={{ enabled: true }}
         allowTouchMove
         centeredSlides={true}
-        // centeredSlidesBounds={true}
-        // autoplay={{ delay: 3000 }}
-        // pagination={{ clickable: true }}
-        // loop={true}
         breakpoints={{
           640: {
             slidesPerView: 2,
-            // spaceBetween: 20,
           },
           768: {
             slidesPerView: 3,
-            // spaceBetween: 40,
           },
           1024: {
             slidesPerView: 5,
@@ -89,7 +95,7 @@ const ProjectsCarouselComponent = ({ projects }: { projects: Project[] }) => {
               }}
               prefetch={true}
               key={project.id + "-logo"} 
-              className={`${projectId === project.id ? 'active' : ''} project-logo-container`}>
+              className={`project-logo-container ${projectId === project.id ? 'active' : ''}`}>
 
               <Image src={`/projectsLogos/${project.logo}`} 
                   alt={project.project_name} 
