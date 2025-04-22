@@ -1,7 +1,6 @@
 // src/components/cv/CVDocument.tsx
 import React, { ReactElement } from 'react';
 import {
-  Document,
   Page,
   Text,
   View,
@@ -42,7 +41,7 @@ const styles = StyleSheet.create({
 
 // ✅ Now correctly typed to return a <Document>
 export const CVDocument = ({ data }: { data: CVData }): ReactElement<DocumentProps> => (
-  <Document>
+  <>
     <Page size="A4" style={styles.page} wrap>
       <View style={styles.section}>
         <Text style={styles.heading}>{data.personalInfo.name}</Text>
@@ -76,5 +75,5 @@ export const CVDocument = ({ data }: { data: CVData }): ReactElement<DocumentPro
         </Text>
       </View>
     </Page>
-  </Document>
+  </>
 );
