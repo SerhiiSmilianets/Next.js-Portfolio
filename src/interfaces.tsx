@@ -39,6 +39,7 @@ export interface PersonalInfo {
     phone: string;
     education: string;
     educationPlace: string;
+    summary: string;
 }
 
 export interface Skills {
@@ -58,6 +59,14 @@ export interface ContactInfo {
 }
 
 export interface CachedData {
+    personalInfo: PersonalInfo;
+    skills: Skills;
+    contactInfo: ContactInfo;
+    companies: Company[];
+    projects: Project[];
+}
+
+export interface CVData {
     personalInfo: PersonalInfo;
     skills: Skills;
     contactInfo: ContactInfo;
