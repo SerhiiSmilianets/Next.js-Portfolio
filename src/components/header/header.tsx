@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Logo from '../../../public/serhii_smilianets_log.svg';
 import styles from '@/styles/modules/header.module.css';
+import { MobileNav } from "@/components/sidebar/mobileNav";
+import { CVButton } from "@/components/cvButton/cvButton";
 
 export const Header: React.FC = () => {
     return (
@@ -14,7 +16,8 @@ export const Header: React.FC = () => {
                 />
             </Link>
 
-            <button className={styles.downloadCVButton}>Download CV</button>
+            <CVButton showOnMobile={false} />
+            <MobileNav />
         </header>
     )
 }

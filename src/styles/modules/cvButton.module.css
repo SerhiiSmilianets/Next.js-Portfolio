@@ -1,0 +1,10 @@
+.downloadCVButton {
+    padding: 0.5rem 1rem;
+    background-color: var(--buttonbackground);
+    color: white;
+    border-radius: 0.375rem;
+}
+
+.downloadCVButton:hover {
+    background-color: var(--buttonhoverbackground)
+}
