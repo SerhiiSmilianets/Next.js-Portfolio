@@ -6,7 +6,7 @@ import React from 'react';
 
 import { hashCVData } from '@/utils/hashData';
 import { Document } from '@react-pdf/renderer';
-import { CVDocument } from '@/components/cv/CVDocument';
+import { CVDocument } from '@/components/cvDocument/CVDocument';
 import cvData from '@/data/data.json';
 
 const CV_DIR = path.join(process.cwd(), 'public', 'cv');

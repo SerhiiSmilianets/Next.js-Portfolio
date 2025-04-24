@@ -14,25 +14,6 @@
     z-index: 1;
   }
 
-  .cvBtn {
-    align-self: anchor-center;
-  }
-
-  .showCVButton {
-    margin-top: 20px;
-    padding: 15px 10px;
-    width: max-content;
-    background-color: var(--buttonbackground);
-    border-radius: 5px;
-    color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    align-self: anchor-center;
-  }
-  
-  .showCVButton:hover {
-    background-color: var(--buttonhoverbackground)
-  }
-
   @media (max-width: 1024px) {
     /* Tablet or smaller screens */
     .sidebar {
@@ -44,9 +25,7 @@
   @media (max-width: 768px) {
     .sidebar {
         display: none;
+        position: absolute;
     }
     
-    .showCVButton {
-        padding: 0.5rem 1rem;
-    }
   }

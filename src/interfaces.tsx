@@ -1,3 +1,15 @@
+export interface NavLinkProps {
+    href: string;
+    icon?: string;
+    name: string;
+    handleClick?: () => void;
+}
+
+export interface CVButtonProps {
+    showOnMobile: boolean;
+    cvBtnStyles?: React.CSSProperties;
+}
+
 export interface Project {
     id: string;
     project_name: string;
@@ -11,12 +23,6 @@ export interface Project {
     team_size: number|string;
     role: string;
     technicalStack: string[];
-}
-
-export interface NavLinkProps {
-    href: string;
-    icon?: string;
-    name: string;
 }
 
 export interface Company {
