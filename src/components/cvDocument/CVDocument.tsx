@@ -53,7 +53,7 @@ export const CVDocument = ({ data }: { data: CVData }): ReactElement<DocumentPro
           {data.personalInfo.secondaryTitles.map((title, i) => (
             <Text key={i}>{title}</Text>
           ))}
-          <Text>{data.contactInfo.email} | {data.contactInfo.phone} | LinkedIn: {data.contactInfo.linkedin}</Text>
+          <Text>{data.contactInfo.Email} | {data.contactInfo.Phone} | LinkedIn: {data.contactInfo.LinkedIn}</Text>
         </View>
 
         <View style={styles.section}>
