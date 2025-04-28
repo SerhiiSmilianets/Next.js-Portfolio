@@ -8,6 +8,7 @@ export interface NavLinkProps {
 export interface CVButtonProps {
     showOnMobile: boolean;
     cvBtnStyles?: React.CSSProperties;
+    handleClick?: () => void;
 }
 
 export interface Project {
@@ -56,12 +57,15 @@ export interface Skills {
 }
 
 export interface ContactInfo {
-    email: string;
-    phone: string;
-    telegram: string;
-    linkedin: string;
-    facebook: string;
-    instagram: string;
+    Email: string;
+    Phone: string;
+    Telegram: string;
+    LinkedIn: string;
+    Facebook: string;
+    Instagram: string;
+    WhatsApp: string;
+    GitHub: string;
+    Viber: string;
 }
 
 export interface CachedData {

@@ -3,8 +3,8 @@ import { CachedData } from '@/interfaces'
 
 let cachedData: CachedData | null = null;
 let cacheTimestamp: number = 0;
-const CACHE_EXPIRATION_TIME = 86400 * 1000; // Cache expires in 24 hours (86400 seconds)
-// const CACHE_EXPIRATION_TIME = 1000 // 1 second for testing
+// const CACHE_EXPIRATION_TIME = 86400 * 1000; // Cache expires in 24 hours (86400 seconds)
+const CACHE_EXPIRATION_TIME = 1000 // 1 second for testing
 
 export async function getData() {
   const currentTime = Date.now();
@@ -57,4 +57,10 @@ export async function getCompanies() {
   const data = await getData();
 
   return data.companies;
+}
+
+export async function getContactInfo() {
+  const data = await getData();
+
+  return data.contactInfo;
 }

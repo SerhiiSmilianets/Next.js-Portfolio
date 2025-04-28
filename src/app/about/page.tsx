@@ -1,4 +1,4 @@
-import { WorkingExperience } from '@/components/about/experience/experience'
+import { WorkingExperience } from '@/components/about/experience/Experience'
 import {getExpYears} from '@/lib/dateHelper'
 import { getCompanies } from '@/lib/serverData';
 import {Company} from '@/interfaces';

@@ -1,6 +1,6 @@
 
 import { getProjects } from '@/lib/serverData';
-import { ProjectsCarousel } from "@/components/projects/projectsCarousel/projectsCarousel";
+import { ProjectsCarousel } from "@/components/projects/projectsCarousel/ProjectsCarousel";
 
 export default async function ProjectsListDefault() {
     const projects = await getProjects(); // Fetch data before rendering

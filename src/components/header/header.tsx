@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Logo from '../../../public/serhii_smilianets_log.svg';
 import styles from '@/styles/modules/header.module.css';
-import { MobileNav } from "@/components/sidebar/mobileNav";
-import { CVButton } from "@/components/cvButton/cvButton";
+import { MobileNav } from "@/components/sidebar/MobileNav";
+import { CVButton } from "@/components/cvButton/CVButton";
 
 export const Header: React.FC = () => {
     return (

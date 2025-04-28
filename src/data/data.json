@@ -16,19 +16,22 @@
         "other": ["Agile", "Scrum", "AI"]
     },
     "contactInfo": {
-        "email": "smilyanets1991@gmail.com",
-        "phone": "+380 96 831 09 94",
-        "telegram": "https://t.me/serhii_smilianets",
-        "linkedin": "https://www.linkedin.com/in/serhii-smilianets-3425021b8/",
-        "facebook": "https://www.facebook.com/SmilianetsSerhii",
-        "instagram": "https://www.instagram.com/enerjay1991/"
+        "Email": "smilyanets1991@gmail.com",
+        "Phone": "+380 96 831 09 94",
+        "Telegram": "https://t.me/serhii_smilianets",
+        "LinkedIn": "https://www.linkedin.com/in/serhii-smilianets-3425021b8/",
+        "Facebook": "https://www.facebook.com/SmilianetsSerhii",
+        "Instagram": "https://www.instagram.com/enerjay1991/",
+        "WhatsApp": "https://wa.me/380968310994",
+        "GitHub": "https://github.com/SerhiiSmilianets",
+        "Viber": "viber://contact?number=%2B380968310994"
     },
     "companies" : [
         {
             "id": "epam",
             "companyName": "EPAM Systems",
             "start_date": 1633039200000,
-            "end_date": "Present",
+            "end_date": 1744588800000,
             "position": "Senior Salesforce Commerce Cloud Developer",
             "projects" : [
                 {

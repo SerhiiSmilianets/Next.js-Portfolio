@@ -4,8 +4,8 @@ import { useState, useEffect, useRef } from 'react';
 import { useIsMobile } from '@/hooks/useIsMobile';
 import { AnimatePresence, motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { NavLink } from '@/components/sidebar/navlink/navLink';
-import { CVButton } from '../cvButton/cvButton';
+import { NavLink } from '@/components/sidebar/navlink/NavLink';
+import { CVButton } from '@/components/cvButton/CVButton';
 import  styles  from '@/styles/modules/mobileNav.module.css';
 
 export const MobileNav = () => {
@@ -51,7 +51,7 @@ export const MobileNav = () => {
             <NavLink href="/projects" icon='📁' name='Projects' handleClick={()=>setIsOpen(false)}/>
             <NavLink href="/contacts" icon='📞' name='Contacts' handleClick={()=>setIsOpen(false)}/>
 
-            <CVButton showOnMobile={true} cvBtnStyles={{"marginBottom": "20px"}}/>
+            <CVButton showOnMobile={true} cvBtnStyles={{"marginBottom": "20px"}} handleClick={()=>setIsOpen(false)}/>
           </motion.nav>
         )}
       </AnimatePresence>

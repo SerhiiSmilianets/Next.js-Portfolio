@@ -63,6 +63,7 @@
   max-width: calc(100vw - 150px);
   margin: 0 auto;
   padding: 20px;
+  position: relative;
 }
 
 .page-title {
