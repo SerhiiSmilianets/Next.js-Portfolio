@@ -98,13 +98,13 @@ export async function sendEmail(prevState: FormState | undefined, formData: Form
   const result = schema.safeParse({ name, email, message })
 
   if (!result.success) {
-    const errors: FormState['errors'] = {}
+    const errors: Record<string, string> = {}
 
     // Loop through the error issues and map them to the specific fields
     result.error.issues.forEach((err) => {
-      const field = err.path[0] as keyof FormState['errors']
+      const field = typeof err.path[0] === 'string' ? (err.path[0] as keyof FormState['errors']) : undefined
       if (field) {
-        errors[field as keyof FormState['errors']] = err.message as string
+        errors[field] = err.message
       }
     })
 
