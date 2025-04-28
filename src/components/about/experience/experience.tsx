@@ -1,7 +1,7 @@
 "use client"
 
 import { Company } from '@/interfaces';
-import { CompanyComponent } from "./company/company";
+import { CompanyComponent } from "./company/Company";
 import { useState, useEffect } from 'react';
 // import "@/app/globals.css"
 import styles from "@/styles/modules/experience.module.css"

@@ -17,6 +17,15 @@ export async function GET() {
   }
     
   const fileName = `${cvData.personalInfo.name.replace(/\s+/g, '_')}_CV.pdf`;
+  const cvEnvFileName = process.env.CV_FILE_NAME;
+
+  //in case not generated file is going to be used
+  if (cvEnvFileName && fileName !== cvEnvFileName) {
+    if (fs.existsSync(path.join(CV_DIR, cvEnvFileName))) {
+      return NextResponse.json({ success: true, url: `/cv/${cvEnvFileName}` });
+    }
+  }
+
   const PDF_PATH = path.join(CV_DIR, fileName);
   const HASH_PATH = path.join(CV_DIR, 'cv.hash');
 

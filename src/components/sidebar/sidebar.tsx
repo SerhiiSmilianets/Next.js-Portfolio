@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { NavLink } from '@/components/sidebar/navlink/navLink';
+import { NavLink } from '@/components/sidebar/navlink/NavLink';
 import styles from '@/styles/modules/sidebar.module.css';
 import { useIsMobile } from '@/hooks/useIsMobile';
 

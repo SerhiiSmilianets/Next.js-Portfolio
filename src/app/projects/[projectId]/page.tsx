@@ -1,16 +1,11 @@
-import { getProject } from '../../../lib/serverData';
-import { ProjectCard } from '@/components/projects/projectCard/projectCard';
+import { getProject } from '@/lib/serverData';
+import { ProjectCard } from '@/components/projects/projectCard/ProjectCard';
 
 export default async function ProjectDetailsPage({
     params,
-    // searchParams
   }: {
-    // searchParams: { [key: string]: string },
     params: Promise<{ projectId: string }>
   }) {
-    // const queryParams = await searchParams;
-    // console.log(queryParams);
-    // const { projectId } = sparams ;
     const { projectId } = await params;
     const project = await getProject(projectId)
 

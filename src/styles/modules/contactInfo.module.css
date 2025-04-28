@@ -1,0 +1,44 @@
+.contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfoTitle {
+    color: var(--textcolor);
+    font: 24px sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contactInfoDescription {
+    color: rgb(76, 77, 93);
+    font: 16px sans-serif;
+    margin-bottom: 20px;
+}
+
+.contactInfoList {
+    display : flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contactInfoLink {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--textcolor);
+    text-decoration: none;
+    font-size: 16px;
+    /* margin-bottom: 10px; */
+}
+
+.contactInfoLink:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .contactInfoContainer {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}

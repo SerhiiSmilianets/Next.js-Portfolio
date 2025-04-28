@@ -1,0 +1,36 @@
+.contactPageContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.contactPage {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.divider {
+    width: 1px;
+    height: 100%;
+    background-color: var(--dividercolor); /* light gray */
+    margin: 0 1rem; /* space left and right */
+}
+
+@media screen and (max-width: 768px) {
+    .contactPage {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -22,12 +22,12 @@
     background-color: var(--buttonbackground);
     color: var(--textcolor);
 }
-.companyTab.active:hover {
+/* .companyTab.active:hover {
     background-color: var(--buttonbackground);
-}
+} */
 
 .companyTab:hover {
-    background-color: color-mix(in srgb, var(--buttonhoverbackground) 50%, white 30%);
+    background-color: color-mix(in srgb, var(--buttonhoverbackground) 50%, white 50%);
     color: var(--textcolor);
 }
 
