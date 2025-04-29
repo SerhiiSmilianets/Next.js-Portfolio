@@ -2,24 +2,24 @@ import { getProject, getProjects } from '@/lib/serverData';
 import { ProjectCard } from '@/components/projects/projectCard/ProjectCard';
 import { Project } from '@/interfaces';
 
-// export async function generateMetadata({
-//     params,
-//   }: {
-//     params: Promise<{ projectId: string }>
-//   }) {
-//     const { projectId } = await params;
-//     const project = (await getProject(projectId)) as Project | null;
+export async function generateMetadata({
+    params,
+  }: {
+    params: Promise<{ projectId: string }>
+  }) {
+    const { projectId } = await params;
+    const project = (await getProject(projectId)) as Project | null;
 
-//     if (!project) {
-//         return 
-//     }
+    if (!project) {
+        return 
+    }
 
-//     return {
-//         title: `${project.project_name} | SFCC Developer Responsibilities`,
-//         description: project.general_information,
-//         keywords: [project.project_name, "Project", "Portfolio", "SFCC"],
-//     };
-// }
+    return {
+        title: `${project.project_name} | SFCC Developer Responsibilities`,
+        description: project.general_information,
+        keywords: [project.project_name, "Project", "Portfolio", "SFCC"],
+    };
+}
 
 export async function generateStaticParams() {
     const projects = await getProjects();
