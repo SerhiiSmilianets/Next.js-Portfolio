@@ -1,4 +1,3 @@
-import { headers as nextHeaders } from 'next/headers';
 import { CachedData } from '@/interfaces'
 
 let cachedData: CachedData | null = null;
@@ -15,10 +14,7 @@ export async function getData() {
     return cachedData;
   }
 
-  const headers = new Headers(await nextHeaders());
-  const host = headers.get('host');
-  const protocol = process.env.NODE_ENV === 'production' ? 'https' : 'http'; // Handle HTTPS in production
-  const baseUrl = `${protocol}://${host}`;
+  const baseUrl = process.env.BASE_URL || 'http://localhost:3000';
 
   const response = await fetch(`${baseUrl}/api/data`, {
     cache: 'no-store', // Ensures fresh data on every request
