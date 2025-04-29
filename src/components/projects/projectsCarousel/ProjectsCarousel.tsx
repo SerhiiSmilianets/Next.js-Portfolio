@@ -94,7 +94,6 @@ const ProjectsCarouselComponent = ({ projects }: { projects: Project[] }) => {
                   pathname: `/projects/${project.id}`,
               }}
               prefetch={true}
-              key={project.id + "-logo"} 
               className={`project-logo-container ${projectId === project.id ? 'active' : ''}`}>
 
               <Image src={`/projectsLogos/${project.logo}`} 
