@@ -57,6 +57,7 @@ html {
   font-weight: 400;
   overflow-y: scroll;
   scrollbar-width: none;
+  overscroll-behavior: none;
 }
 
 .layout-container {
