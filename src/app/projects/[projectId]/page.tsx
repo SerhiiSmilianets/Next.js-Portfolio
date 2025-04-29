@@ -1,5 +1,13 @@
-import { getProject } from '@/lib/serverData';
+import { getProject, getProjects } from '@/lib/serverData';
 import { ProjectCard } from '@/components/projects/projectCard/ProjectCard';
+import { Project } from '@/interfaces';
+
+export async function generateStaticParams() {
+    const projects = await getProjects();
+    return projects.map((item : Project) => ({
+        projectId: item.id,
+    }));
+}
 
 export default async function ProjectDetailsPage({
     params,
