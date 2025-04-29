@@ -1,4 +1,5 @@
 import { CachedData } from '@/interfaces'
+import data from '@/data/data.json';
 
 let cachedData: CachedData | null = null;
 let cacheTimestamp: number = 0;
@@ -9,28 +10,16 @@ export async function getData() {
   const currentTime = Date.now();
 
   if (cachedData && currentTime - cacheTimestamp < CACHE_EXPIRATION_TIME) {
-    // Return cached data if it hasn't expired
     console.log("server cached data is used");
     return cachedData;
   }
 
-  const baseUrl = process.env.BASE_URL || 'http://localhost:3000';
-
-  const response = await fetch(`${baseUrl}/api/data`, {
-    cache: 'no-store', // Ensures fresh data on every request
-  });
-
-  if (!response.ok) {
-    throw new Error('Failed to fetch projects');
-  }
-
-  const data = await response.json();
-
+  // Return imported data instead of fetching from /api
   cachedData = data;
   cacheTimestamp = currentTime;
   
   console.log("server non-cached data is used");
-  return data;
+  return cachedData;
 }
 
 export async function getProjects() {

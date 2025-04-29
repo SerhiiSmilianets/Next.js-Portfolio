@@ -15,11 +15,15 @@ export default async function ProjectDetailsPage({
     params: Promise<{ projectId: string }>
   }) {
     const { projectId } = await params;
-    const project = await getProject(projectId)
+    const project = (await getProject(projectId)) as Project | null;
+
+    if (!project) {
+        return <div>Project not found</div>;
+    }
 
     return (
         <div>
-            <ProjectCard project={project} key={project.id} />
+            {project && <ProjectCard project={project} key={project.id} />}
         </div>
-    )
+    );
 }
