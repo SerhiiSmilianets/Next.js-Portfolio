@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import type { Viewport } from 'next'
+ 
 import { Geist, Geist_Mono } from "next/font/google";
 
 import "@/styles/globals.css";
@@ -16,9 +18,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false
+}
+
 export const metadata: Metadata = {
   title: "Serhii Smilianets | Portfolio",
-  description: "Serhii Smilianets portfolio website",
+  description: "Serhii Smilianets portfolio website"
 };
 
 export default function RootLayout({
@@ -29,7 +38,8 @@ export default function RootLayout({
   return ( 
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased body`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        id="body"
       >
         <main className="main">
           <Header/>
