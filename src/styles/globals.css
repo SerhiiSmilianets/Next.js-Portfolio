@@ -42,6 +42,10 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
+  min-height: 100%;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 #body {
