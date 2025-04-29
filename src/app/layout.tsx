@@ -27,8 +27,21 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Serhii Smilianets | Portfolio",
-  description: "Serhii Smilianets portfolio website"
+  title: {
+    template: "%s | Salesforce Commerce Cloud Developer | Web Developer",
+    default: "Serhii Smilianets | Salesforce Commerce Cloud Developer | Web Developer",
+  },
+  description: "Serhii Smilianets Portfolio",
+  keywords: [
+    "Salesforce Commerce Cloud Developer",
+    "Web Developer",
+    "Portfolio",
+    "Serhii Smilianets",
+    "SFCC",
+    "JavaScript",
+    "React",
+    "Next.js",
+  ]
 };
 
 export default function RootLayout({
