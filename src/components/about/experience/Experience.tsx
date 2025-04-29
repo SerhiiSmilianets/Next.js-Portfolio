@@ -8,9 +8,9 @@ import styles from "@/styles/modules/experience.module.css"
 
 export const WorkingExperience = ({companies} : {companies:Company[]})  => {
     const [companiesData, setCompaniesData] = useState<Company[]>([]);
-    const [selectedCompany, setSelectedCompany] = useState<Company | null>(companiesData[0] || null);
+    const [selectedCompany, setSelectedCompany] = useState<Company | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(true);
-
+    
     useEffect(() => {
         try{
             setCompaniesData(companies);
@@ -23,9 +23,7 @@ export const WorkingExperience = ({companies} : {companies:Company[]})  => {
 
     }, [companies]);
 
-    const selectCompany = (company: Company) => {
-        setSelectedCompany(company);
-    }
+    if (!selectedCompany) return null;
 
     return (
         <div className={`${styles.experienceContainer} animate-fadeIn`}>
@@ -36,11 +34,15 @@ export const WorkingExperience = ({companies} : {companies:Company[]})  => {
                         </div>
                     ) : companiesData && companiesData.length ? (
                         <>
-                            {companiesData.map((company : Company) => (
-                                <button key={company.id} className={`${styles.companyTab} ${selectedCompany && selectedCompany.id === company.id ? styles.active : "" }`} onClick={() => selectCompany(company)}>
-                                    {company.companyName}
-                                </button>
-                            ))}
+                            {companiesData.map((company : Company) => {
+                                const isActive = selectedCompany && company && selectedCompany.id === company.id;
+                                
+                                return (
+                                    <button key={company.id} className={`${styles.companyTab} ${ isActive ? styles.activeTab : "" }`} onClick={() => setSelectedCompany(company)}>
+                                        {company.companyName}
+                                    </button>
+                                )
+                            })}
                         </>
                     ) : (
                         <div className="flex items-center justify-center w-full h-full text-2xl font-bold text-gray-500">
