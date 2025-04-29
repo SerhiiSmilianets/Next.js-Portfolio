@@ -38,6 +38,7 @@
 .profileName {
   font-size: 3rem;
   font-weight: 800;
+  color: var(--textcolor);
 }
 
 .certifiedText {
