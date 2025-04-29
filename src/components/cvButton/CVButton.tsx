@@ -7,6 +7,7 @@ import { useState } from 'react';
 
 const CVButtonComponent: React.FC<{ cvBtnStyles?: React.CSSProperties; handleClick?: () => void }> = ({ cvBtnStyles, handleClick }) => {
     const [isLoading, setIsLoading] = useState(false);
+    const isMobile = useIsMobile();
     
     const handleGenerate = async () => {
         setIsLoading(true);
@@ -15,7 +16,19 @@ const CVButtonComponent: React.FC<{ cvBtnStyles?: React.CSSProperties; handleCli
             const data = await res.json();
 
             if (data?.url) {
-                window.open(data.url, '_blank');
+                if (isMobile){
+                    // Mobile — force download
+                    const link = document.createElement('a');
+                    link.href = data.url;
+                    link.download = 'Serhii_Smilianets_CV.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                } else {
+                    // Desktop — open in new tab
+                    window.open(data.url, '_blank');
+                }
+                
             }
         } catch (error) {
             console.error('Failed to generate CV', error);
@@ -46,7 +59,7 @@ export const CVButton: React.FC<CVButtonProps> = ({ showOnMobile, cvBtnStyles, h
         return <CVButtonComponent cvBtnStyles={cvBtnStyles} handleClick={handleClick}/>;
     }
     if (!isMobile) {
-        return <CVButtonComponent cvBtnStyles={cvBtnStyles}/>;
+        return <CVButtonComponent cvBtnStyles={cvBtnStyles} handleClick={handleClick}/>;
     }
 
     return null

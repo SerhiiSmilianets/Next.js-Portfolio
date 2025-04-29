@@ -6,14 +6,18 @@ export const useIsMobile = (breakpoint = 769) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < breakpoint);
+    const checkIsMobile = () => {
+      const userAgent = typeof window !== 'undefined' ? navigator.userAgent : '';
+      const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(userAgent);
+      const isSmallScreen = window.innerWidth < breakpoint;
+
+      setIsMobile(isMobileDevice || isSmallScreen);
     };
 
-    handleResize(); // Check on initial load
-    window.addEventListener('resize', handleResize);
+    checkIsMobile(); // Initial check
+    window.addEventListener('resize', checkIsMobile);
 
-    return () => window.removeEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', checkIsMobile);
   }, [breakpoint]);
 
   return isMobile;
