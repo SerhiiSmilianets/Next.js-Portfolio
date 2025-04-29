@@ -4,7 +4,7 @@ import { useActionState } from 'react'
 import { sendEmail, type FormState } from '@/actions/formActions'
 import { useState, startTransition } from 'react'
 import { LoaderComponent } from '@/components/loader/Loader'
-import '@/styles/contactForm.css'
+import styles from '@/styles/modules/contactForm.module.css'
 
 const initialState: FormState = {}
 
@@ -47,25 +47,27 @@ export function ContactForm() {
     <>
       {isPending && <LoaderComponent />}
 
-      <div className="form-wrapper">
-        <h2 className="form-title">Contact Me</h2>
-        <p className="form-description">I would love to hear from you! Please fill out the form below.</p>
-        <form onSubmit={handleSubmit} noValidate>
-          <div className={`form-field ${state?.errors?.name ? 'error' : ''}`}>
-            <label htmlFor="name">Name</label>
+      <div className={styles.formWrapper}>
+        <h2 className={styles.formTitle}>Contact Me</h2>
+        <p className={styles.formDescription}>I would love to hear from you! Please fill out the form below.</p>
+        <form onSubmit={handleSubmit} noValidate className={styles.form}>
+          <div className={`${styles.formField} ${state?.errors?.name ? styles.error : ''}`}>
+            <label className={styles.label} htmlFor="name">Name</label>
             <input 
+              className={styles.input}
               id="name" 
               name="name"
               value={formValues.name}
               onChange={handleChange}
               placeholder='Your Name'
             />
-            {state?.errors?.name && <div className="error-text">{state.errors.name}</div>}
+            {state?.errors?.name && <div className={styles.errorText}>{state.errors.name}</div>}
           </div>
 
-          <div className={`form-field ${state?.errors?.email ? 'error' : ''}`}>
-            <label htmlFor="email">Email</label>
+          <div className={`${styles.formField} ${state?.errors?.email ? styles.error : ''}`}>
+            <label className={styles.label} htmlFor="email">Email</label>
             <input 
+              className={styles.input}
               id="email" 
               type="email" 
               name="email"
@@ -73,12 +75,13 @@ export function ContactForm() {
               onChange={handleChange}
               placeholder='Your Email'
             />
-            {state?.errors?.email && <div className="error-text">{state.errors.email}</div>}
+            {state?.errors?.email && <div className={styles.errorText}>{state.errors.email}</div>}
           </div>
 
-          <div className={`form-field ${state?.errors?.message ? 'error' : ''}`}>
-            <label htmlFor="message">Message</label>
+          <div className={`${styles.formField} ${state?.errors?.message ? styles.error : ''}`}>
+            <label className={styles.label} htmlFor="message">Message</label>
             <textarea 
+              className={styles.textarea}
               id="message" 
               name="message" 
               rows={4}
@@ -86,16 +89,16 @@ export function ContactForm() {
               onChange={handleChange} 
               placeholder='Your Message'
             />
-            {state?.errors?.message && <div className="error-text">{state.errors.message}</div>}
+            {state?.errors?.message && <div className={styles.errorText}>{state.errors.message}</div>}
           </div>
 
-          <button type="submit" disabled={isPending}>
+          <button className={styles.button} type="submit" disabled={isPending}>
             {isPending ? 'Submitting...' : 'Send'}
           </button>
         </form>
 
         {state?.message && (
-          <p className={`form-message ${state.success ? 'success' : 'fail'}`}>
+          <p className={`${styles.formMessage} ${state.success ? styles.success : styles.fail}`}>
             {state.message}
           </p>
         )}
