@@ -43,6 +43,8 @@ export const metadata: Metadata = {
     "Next.js",
   ],
   openGraph: {
+    url: process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000',
+    type: "website",
     images: [
       {
         url: `${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/opengraph-image.png`,
