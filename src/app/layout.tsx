@@ -36,8 +36,8 @@ export const metadata: Metadata = {
     default: "Serhii Smilianets | Salesforce Commerce Cloud Developer | Web Developer",
   },
   description: description,
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),
-  authors: [{ name: "Serhii Smilianets", url: process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000' }],
+  metadataBase: new URL(process.env.BASE_URL || 'http://localhost:3000'),
+  authors: [{ name: "Serhii Smilianets", url: process.env.BASE_URL || 'http://localhost:3000' }],
   creator: "Serhii Smilianets",
   applicationName: "Serhii Smilianets Portfolio",
   keywords: [
@@ -51,12 +51,12 @@ export const metadata: Metadata = {
     "Next.js",
   ],
   openGraph: {
-    url: process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000',
+    url: process.env.BASE_URL || 'http://localhost:3000',
     type: "website",
     description: description,
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/opengraph-image.png`,
+        url: `${process.env.BASE_URL || 'http://localhost:3000'}/opengraph-image.png`,
         width: 1200,
         height: 630,
         alt: "Serhii Smilianets Portfolio",
