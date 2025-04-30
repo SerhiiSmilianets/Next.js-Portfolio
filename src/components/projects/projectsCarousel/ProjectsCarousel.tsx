@@ -93,7 +93,6 @@ const ProjectsCarouselComponent = ({ projects }: { projects: Project[] }) => {
               href={{
                   pathname: `/projects/${project.id}`,
               }}
-              prefetch={true}
               className={`project-logo-container ${projectId === project.id ? 'active' : ''}`}>
 
               <Image src={`/projectsLogos/${project.logo}`} 
