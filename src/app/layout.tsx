@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { Viewport } from 'next'
+import { getExpYears } from '@/lib/dateHelper'
  
 import { Geist, Geist_Mono } from "next/font/google";
 
@@ -26,12 +27,18 @@ export const viewport: Viewport = {
   viewportFit: 'cover'
 }
 
+const years = getExpYears();
+const description = `I’m a Salesforce Commerce Cloud Fullstack Developer with ${years}+ years of experience building scalable e-commerce solutions for global brands.`;
+
 export const metadata: Metadata = {
   title: {
     template: "%s | Salesforce Commerce Cloud Developer | Web Developer",
     default: "Serhii Smilianets | Salesforce Commerce Cloud Developer | Web Developer",
   },
-  description: "Serhii Smilianets Portfolio",
+  description: description,
+  authors: [{ name: "Serhii Smilianets", url: process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000' }],
+  creator: "Serhii Smilianets",
+  applicationName: "Serhii Smilianets Portfolio",
   keywords: [
     "Salesforce Commerce Cloud Developer",
     "Web Developer",
@@ -45,6 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000',
     type: "website",
+    description: description,
     images: [
       {
         url: `${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/opengraph-image.png`,
