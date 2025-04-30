@@ -41,7 +41,17 @@ export const metadata: Metadata = {
     "JavaScript",
     "React",
     "Next.js",
-  ]
+  ],
+  openGraph: {
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/opengraph-image.png`,
+        width: 1200,
+        height: 630,
+        alt: "Serhii Smilianets Portfolio",
+      }
+    ]
+  }
 };
 
 export default function RootLayout({
