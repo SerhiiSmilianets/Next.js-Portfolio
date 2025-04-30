@@ -36,6 +36,7 @@ export const metadata: Metadata = {
     default: "Serhii Smilianets | Salesforce Commerce Cloud Developer | Web Developer",
   },
   description: description,
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),
   authors: [{ name: "Serhii Smilianets", url: process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000' }],
   creator: "Serhii Smilianets",
   applicationName: "Serhii Smilianets Portfolio",
