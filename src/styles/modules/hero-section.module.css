@@ -1,0 +1,63 @@
+/* app/styles/hero-section.module.css */
+.heroSection {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+    background: black;
+    color: white;
+  }
+  
+  @media (min-width: 768px) {
+    .heroSection {
+      flex-direction: row;
+      padding: 0 3rem;
+    }
+  
+    .textBlock {
+      text-align: left;
+    }
+  }
+  
+  .textBlock {
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .title {
+      font-size: 3.5rem;
+    }
+  }
+  
+  .subtitle {
+    font-size: 1.125rem;
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .avatar {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 9999px;
+    border: 4px solid #7c3aed; /* violet-600 */
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+  }
+  
