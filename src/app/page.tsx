@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { FC } from 'react';
 import Avatar from '../../public/avatar.jpg';
 import styles from "@/styles/modules/home.module.css";
+// import { HeroSection } from '@/components/hero/HeroSection';
 
 const Home: FC = () => {
   return (
@@ -23,6 +24,8 @@ const Home: FC = () => {
         <p className={styles.certifiedText}>Certified Salesforce Commerce Cloud Developer</p>
         <p className={styles.jobTitle}>Web developer</p>
       </div>
+
+      {/* <HeroSection /> */}
     </>
   );
 };
