@@ -21,7 +21,7 @@ export default async function About() {
     <div>
       <h1 className='page-title'>About Me</h1>
 
-      <section className="about-section-container">
+      <section className="about-section-container animate-fadeIn">
         <div className="about-profile-image-container">
           <Image
             src={Avatar}
@@ -45,8 +45,8 @@ export default async function About() {
 
       <hr/>
 
-      <h2 className="section-title">Skills:</h2>
-      <section className="section-container">
+      <h2 className="section-title animate-fadeIn">Skills:</h2>
+      <section className="section-container animate-fadeIn">
         <ul>
           <li><strong>Education:</strong> Specialist degree in Information Technology Odesa National Academy of Communications</li>
           <li><strong>Languages:</strong> English(B2+), Ukrainian(Native)</li>
@@ -57,8 +57,8 @@ export default async function About() {
 
       <hr/>
 
-      <h2 className="section-title">Experience:</h2>
-      <section className="section-container">
+      <h2 className="section-title animate-fadeIn">Experience:</h2>
+      <section className="section-container animate-fadeIn">
         <WorkingExperience companies={companies}/>
       </section>
     </div>

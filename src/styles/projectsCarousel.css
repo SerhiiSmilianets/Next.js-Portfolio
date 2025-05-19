@@ -34,15 +34,17 @@
   transition: transform 0.3s ease-in-out;
 }
 
+.swiper-button-disabled {
+  display: none;
+}
+
 .project-logo-container {
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: center;
     background-color: rgb(229 231 235);
-    /* background-color: var(--cardbackground); */
     border-radius: 5%;
-    /* box-shadow: var(--cardshadow); */
 }
 
 .project-logo {
