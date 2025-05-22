@@ -1,5 +1,6 @@
 import { CachedData } from '@/interfaces'
 import data from '@/data/data.json';
+import { getExpYears } from '@/lib/dateHelper'
 
 let cachedData: CachedData | null = null;
 let cacheTimestamp: number = 0;
@@ -48,4 +49,12 @@ export async function getContactInfo() {
   const data = await getData();
 
   return data.contactInfo;
+}
+
+export async function getSummaryInfo() {
+  const data = await getData();
+  const summary = data.personalInfo.summary;
+  const experienceYears = getExpYears();
+  
+  return summary.replace('{{experienceYears}}', experienceYears.toString());
 }
