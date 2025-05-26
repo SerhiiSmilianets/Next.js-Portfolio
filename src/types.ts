@@ -28,14 +28,14 @@ export type Project = {
 
 export type ProjectSummary = {
     id: string;
-    name: string;
+    project_name: string;
 };
 
 export type Company = {
     id: string;
     companyName: string;
     start_date: number;
-    end_date: number|string;
+    end_date: number|"Present";
     position: string;
     projects: ProjectSummary[];
 };
