@@ -7,7 +7,7 @@
         "phone": "+380 96 831 09 94",
         "education": "Specialist degree in Information Technology",
         "educationPlace": "Odesa National Academy of Communications",
-        "summary": "I’m a Software Engineer with over 6 years of experience working with Salesforce Commerce Cloud (SFCC) as both a Front-End and Back-End Developer. I started my career in front-end development, focusing on JavaScript, jQuery, and SCSS, but eventually transitioned into back-end development, learning everything on my own. Over time, I became a Full-Stack Developer, handling everything from UI styling to complex server-side integrations. I’ve worked on several high-profile eCommerce projects, including Continente, Bugaboo and Sephora. My responsibilities have ranged from bug fixing and performance optimization to implementing new features, integrating third-party services, and enhancing checkout processes. I’m skilled in JavaScript (both front-end and back-end), SFRA, SiteGenesis, Next.js, React.js, and Node.js. I also hold a Salesforce Commerce Cloud Developer certification, and I’m always eager to expand my expertise. I thrive in dynamic environments, love solving complex problems, and enjoy collaborating with teams to build efficient and scalable solutions. My approach to work is detail-oriented, disciplined, and goal-driven, and I’m always open to learning something new."
+        "summary": "I’m a Software Engineer with over {{experienceYears}} years of experience working with Salesforce Commerce Cloud (SFCC) as both a Front-End and Back-End Developer. I started my career in front-end development, focusing on JavaScript, jQuery, and SCSS, but eventually transitioned into back-end development, learning everything on my own. Over time, I became a Full-Stack Developer, handling everything from UI styling to complex server-side integrations. I’ve worked on several high-profile eCommerce projects, including Continente, Bugaboo and Sephora. My responsibilities have ranged from bug fixing and performance optimization to implementing new features, integrating third-party services, and enhancing checkout processes. I’m skilled in JavaScript (both front-end and back-end), SFRA, SiteGenesis, Next.js, React.js, and Node.js. I also hold a Salesforce Commerce Cloud Developer certification, and I’m always eager to expand my expertise. I thrive in dynamic environments, love solving complex problems, and enjoy collaborating with teams to build efficient and scalable solutions. My approach to work is detail-oriented, disciplined, and goal-driven, and I’m always open to learning something new."
     },
     "skills": {
         "skillStack": ["JavaScript", "HTML", "CSS", "React", "Next.js", "Node.js", "Express.js", "Salesforce Commerce Cloud", "SFRA", "SiteGenesis"],
@@ -15,6 +15,14 @@
         "databases": ["MongoDB"],
         "other": ["Agile", "Scrum", "AI"]
     },
+    "certifications": [
+        {
+            "id": "sfcc-developer",
+            "name": "Salesforce Certified B2C Commerce Developer",
+            "link": "https://www.salesforce.com/trailblazer/serhiismilianets",
+            "icon": "sfcc.png"
+        }
+    ],
     "contactInfo": {
         "Email": "smilyanets1991@gmail.com",
         "Phone": "+380 96 831 09 94",

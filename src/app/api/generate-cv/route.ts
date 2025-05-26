@@ -8,6 +8,7 @@ import { hashCVData } from '@/utils/hashData';
 import { Document } from '@react-pdf/renderer';
 import { CVDocument } from '@/components/cvDocument/CVDocument';
 import cvData from '@/data/data.json';
+import { getSummaryInfo } from '@/lib/serverData';
 
 const CV_DIR = path.join(process.cwd(), 'public', 'cv');
 
@@ -18,6 +19,7 @@ export async function GET() {
     
   const fileName = `${cvData.personalInfo.name.replace(/\s+/g, '_')}_CV.pdf`;
   const cvEnvFileName = process.env.CV_FILE_NAME;
+  const summary = await getSummaryInfo(); //Fetch the updated summary info based on work experience
 
   //in case not generated file is going to be used
   if (cvEnvFileName && fileName !== cvEnvFileName) {
@@ -29,7 +31,7 @@ export async function GET() {
   const PDF_PATH = path.join(CV_DIR, fileName);
   const HASH_PATH = path.join(CV_DIR, 'cv.hash');
 
-  const currentHash = hashCVData(cvData);
+  const currentHash = hashCVData(cvData, summary);
   let previousHash = '';
 
   if (fs.existsSync(HASH_PATH)) {
@@ -42,7 +44,7 @@ export async function GET() {
     console.log('Generating new PDF CV...');
 
     // Correctly use Document wrapper around CVDocument
-    const pdfDocument =  React.createElement(Document, {}, React.createElement(CVDocument, { data: cvData }));
+    const pdfDocument =  React.createElement(Document, {}, React.createElement(CVDocument, { data: cvData, summary: summary }));
     try {
       // Render the PDF document to a buffer
       const pdfBuffer = await renderToBuffer(pdfDocument);

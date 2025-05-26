@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { NextResponse } from 'next/server';
-import { Project } from '@/interfaces';
+import { Project } from '@/types';
 
 const filePath = path.join(process.cwd(), '/src/data/data.json');
 

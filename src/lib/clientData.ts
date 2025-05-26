@@ -1,4 +1,5 @@
-import { CachedData } from '@/interfaces'
+import { CachedData } from '@/types'
+import { getExpYears } from '@/lib/dateHelper'
 
 let cachedData: CachedData | null = null;
 let cacheTimestamp: number = 0;
@@ -51,4 +52,12 @@ export async function getCompanies() {
   const data = await getData();
 
   return data.companies;
+}
+
+export async function getSummaryInfo() {
+  const data = await getData();
+  const summary = data.personalInfo.summary;
+  const experienceYears = getExpYears();
+  
+  return summary.replace('{{experienceYears}}', experienceYears.toString());
 }

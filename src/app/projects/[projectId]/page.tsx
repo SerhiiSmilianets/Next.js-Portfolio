@@ -1,6 +1,6 @@
 import { getProject } from '@/lib/serverData';
 import { ProjectCard } from '@/components/projects/projectCard/ProjectCard';
-import { Project } from '@/interfaces';
+import { Project } from '@/types';
 
 export default async function ProjectDetailsPage({
     params,

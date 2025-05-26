@@ -1,4 +1,4 @@
-import {Company} from '@/interfaces';
+import {Company} from '@/types';
 import {workingPeriod} from '@/lib/dateHelper';
 import styles from "@/styles/modules/company.module.css"
 import Link from 'next/link';
