@@ -1,5 +1,5 @@
 import crypto from 'crypto';
-import { CVData } from '@/interfaces';
+import { CVData } from '@/types';
 
 export function hashCVData(data: CVData, summary: string): string {
   const cvData = JSON.stringify(data);

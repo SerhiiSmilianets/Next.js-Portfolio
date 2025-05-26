@@ -15,6 +15,14 @@
         "databases": ["MongoDB"],
         "other": ["Agile", "Scrum", "AI"]
     },
+    "certifications": [
+        {
+            "id": "sfcc-developer",
+            "name": "Salesforce Certified B2C Commerce Developer",
+            "link": "https://www.salesforce.com/trailblazer/serhiismilianets",
+            "icon": "sfcc.png"
+        }
+    ],
     "contactInfo": {
         "Email": "smilyanets1991@gmail.com",
         "Phone": "+380 96 831 09 94",

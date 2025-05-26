@@ -1,4 +1,4 @@
-import { CachedData } from '@/interfaces'
+import { CachedData } from '@/types'
 import data from '@/data/data.json';
 import { getExpYears } from '@/lib/dateHelper'
 

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { WorkingExperience } from '@/components/about/experience/Experience'
 import { getCompanies, getSummaryInfo } from '@/lib/serverData';
-import {Company} from '@/interfaces';
+import {Company} from '@/types';
 import Image from 'next/image';
 import Avatar from '../../../public/avatar.jpg';
 import '@/styles/about.css';

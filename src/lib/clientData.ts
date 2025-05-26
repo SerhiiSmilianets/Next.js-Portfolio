@@ -1,4 +1,4 @@
-import { CachedData } from '@/interfaces'
+import { CachedData } from '@/types'
 import { getExpYears } from '@/lib/dateHelper'
 
 let cachedData: CachedData | null = null;

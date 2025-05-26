@@ -1,6 +1,6 @@
 "use client"
 
-import { Company } from '@/interfaces';
+import { Company } from '@/types';
 import { CompanyComponent } from "./company/Company";
 import { useState, useEffect } from 'react';
 // import "@/app/globals.css"

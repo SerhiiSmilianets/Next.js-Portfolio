@@ -11,7 +11,7 @@ import {
   Link
 } from '@react-pdf/renderer';
 
-import { CVData } from '@/interfaces';
+import { CVData } from '@/types';
 import { workingPeriod } from '@/lib/dateHelper';
 
 Font.register({

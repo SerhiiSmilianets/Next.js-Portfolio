@@ -1,6 +1,6 @@
 'use client'
 
-import { Project } from '@/interfaces';
+import { Project } from '@/types';
 import {workingPeriod} from '@/lib/dateHelper';
 import styles from '@/styles/modules/projects.module.css';
 import { motion, AnimatePresence } from 'framer-motion';

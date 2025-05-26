@@ -1,6 +1,6 @@
 "use client";
 
-import { CVButtonProps } from '@/interfaces';
+import { CVButtonProps } from '@/types';
 import styles from '@/styles/modules/cvButton.module.css';
 import { useIsMobile } from '@/hooks/useIsMobile';
 import { useState } from 'react';
