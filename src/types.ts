@@ -12,50 +12,50 @@ export type CVButtonProps = {
 };
 
 export type Project = {
-  id: string;
-  name: string;
-  startDate: number;
-  endDate: number | 'Present';
-  link: string;
-  logo: string;
-  description: string;
-  responsibilities: string[];
-  technologiesUsed: string[];
-  teamSize: number;
-  role: string;
-  technicalStack: string[];
+    id: string;
+    project_name: string;
+    start_date: number;
+    end_date: number|'Present';
+    link: string;
+    logo: string;
+    general_information: string;
+    responsibilities: string[];
+    technologiesUsed: string[];
+    team_size: number|string;
+    role: string;
+    technicalStack: string[];
 };
 
 export type ProjectSummary = {
-  id: string;
-  name: string;
+    id: string;
+    name: string;
 };
 
 export type Company = {
-  id: string;
-  name: string;
-  startDate: number;
-  endDate: number | 'Present';
-  position: string;
-  projects: ProjectSummary[];
+    id: string;
+    companyName: string;
+    start_date: number;
+    end_date: number|string;
+    position: string;
+    projects: ProjectSummary[];
 };
 
 export type PersonalInfo = {
-  fullName: string;
-  mainTitle: string;
-  secondaryTitles: string[];
-  email: string;
-  phone: string;
-  education: string;
-  educationInstitution: string;
-  summary: string;
+  name: string;
+    mainTitle: string;
+    secondaryTitles: string[];
+    email: string;
+    phone: string;
+    education: string;
+    educationPlace: string;
+    summary: string;
 };
 
 export type Skills = {
-  stack: string[];
-  tools: string[];
-  databases: string[];
-  other: string[];
+  skillStack: string[];
+    tools: string[];
+    databases: string[];
+    other: string[];
 };
 
 export type Certification = {
@@ -66,15 +66,15 @@ export type Certification = {
 }
 
 export type ContactInfo = {
-  email: string;
-  phone: string;
-  telegram: string;
-  linkedIn: string;
-  facebook: string;
-  instagram: string;
-  whatsapp: string;
-  github: string;
-  viber: string;
+  Email: string;
+    Phone: string;
+    Telegram: string;
+    LinkedIn: string;
+    Facebook: string;
+    Instagram: string;
+    WhatsApp: string;
+    GitHub: string;
+    Viber: string;
 };
 
 export type CVData = {
