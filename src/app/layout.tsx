@@ -62,7 +62,13 @@ export const metadata: Metadata = {
         alt: "Serhii Smilianets Portfolio",
       }
     ]
-  }
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Serhii Smilianets | Salesforce Commerce Cloud Developer | Web Developer",
+    description,
+    images: `${process.env.BASE_URL || 'http://localhost:3000'}/opengraph-image.png`,
+  },
 };
 
 export default function RootLayout({
