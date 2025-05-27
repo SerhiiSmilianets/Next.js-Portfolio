@@ -44,8 +44,6 @@ export type PersonalInfo = {
   name: string;
     mainTitle: string;
     secondaryTitles: string[];
-    email: string;
-    phone: string;
     education: string;
     educationPlace: string;
     summary: string;
@@ -56,6 +54,7 @@ export type Skills = {
     tools: string[];
     databases: string[];
     other: string[];
+    languages: string[];
 };
 
 export type Certification = {
@@ -77,14 +76,44 @@ export type ContactInfo = {
     Viber: string;
 };
 
-export type CVData = {
+export type AllData = {
   personalInfo: PersonalInfo;
   skills: Skills;
   contactInfo: ContactInfo;
   companies: Company[];
   projects: Project[];
-  certifications: Certification[];
+  certificates: Certification[];
 };
 
-// Alias for cached data — identical to CVData
-export type CachedData = CVData;
+export interface CVProject {
+  id: string;
+  projectName: string;
+  role: string;
+  teamSize: number;
+  technicalStack: string[];
+  responsibilities: string[];
+}
+
+export interface CVExperience {
+  id: string;
+  companyName: string;
+  position: string;
+  startDate: string;
+  endDate: string | null;
+  projects: CVProject[];
+}
+
+export interface CVJsonData {
+  name: string;
+  mainTitle: string;
+  email: string;
+  phone: string;
+  linkedIn: string;
+  education: string;
+  educationPlace: string;
+  summary: string;
+  skills: string[];
+  languages: string[];
+  certificates: Certification[];
+  experience: CVExperience[];
+}

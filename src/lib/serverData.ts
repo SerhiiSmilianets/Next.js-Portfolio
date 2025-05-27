@@ -1,11 +1,16 @@
-import { CachedData } from '@/types'
+import { AllData } from '@/types'
 import data from '@/data/data.json';
 import { getExpYears } from '@/lib/dateHelper'
 
-let cachedData: CachedData | null = null;
+let cachedData: AllData | null = null;
 let cacheTimestamp: number = 0;
 const CACHE_EXPIRATION_TIME = 86400 * 1000; // Cache expires in 24 hours (86400 seconds)
 // const CACHE_EXPIRATION_TIME = 1000 // 1 second for testing
+
+function generateSummary(data: AllData) {
+  const experienceYears = getExpYears();
+  return data.personalInfo.summary.replace('{{experienceYears}}', experienceYears.toString());
+}
 
 export async function getData() {
   const currentTime = Date.now();
@@ -17,6 +22,9 @@ export async function getData() {
 
   // Return imported data instead of fetching from /api
   cachedData = data;
+  if (cachedData) {
+    cachedData.personalInfo.summary = generateSummary(data);
+  }
   cacheTimestamp = currentTime;
   
   console.log("server non-cached data is used");
@@ -53,8 +61,6 @@ export async function getContactInfo() {
 
 export async function getSummaryInfo() {
   const data = await getData();
-  const summary = data.personalInfo.summary;
-  const experienceYears = getExpYears();
-  
-  return summary.replace('{{experienceYears}}', experienceYears.toString());
+
+  return data.personalInfo.summary;
 }

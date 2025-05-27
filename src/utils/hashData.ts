@@ -1,8 +1,7 @@
 import crypto from 'crypto';
-import { CVData } from '@/types';
+import { AllData } from '@/types';
 
-export function hashCVData(data: CVData, summary: string): string {
+export function hashCVData(data: AllData): string {
   const cvData = JSON.stringify(data);
-  const stringToHash = `${cvData}${summary}`;
-  return crypto.createHash('sha256').update(stringToHash).digest('hex');
+  return crypto.createHash('sha256').update(cvData).digest('hex');
 }

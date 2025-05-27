@@ -11,19 +11,28 @@ import {
   Link
 } from '@react-pdf/renderer';
 
-import { CVData } from '@/types';
-import { workingPeriod } from '@/lib/dateHelper';
+import { CVJsonData } from '@/types';
 
 Font.register({
   family: 'Roboto',
   src: 'https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Me5Q.ttf'
 });
 
+// const icons = {
+//   email: `${process.env.BASE_URL}/cv-icons/email.png`,
+//   phone: `${process.env.BASE_URL}/cv-icons/phone.png`,
+//   linkedIn: `${process.env.BASE_URL}/cv-icons/linkedin.png`,
+// }
+
+// const avatar = `${process.env.BASE_URL}/avatar.png`;
+
 const icons = {
-  email: `${process.env.BASE_URL}/cv-icons/email.png`,
-  phone: `${process.env.BASE_URL}/cv-icons/phone.png`,
-  linekedIn: `${process.env.BASE_URL}/cv-icons/linkedin.png`,
+  email: `public/cv-icons/email.png`,
+  phone: `public/cv-icons/phone.png`,
+  linkedIn: `public/cv-icons/linkedin.png`,
 }
+
+const avatar = `public/avatar.png`;
 
 const styles = StyleSheet.create({
   page: {
@@ -70,72 +79,72 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'flex-start',
     marginBottom: 4
+  },
+  skills: {
+    marginBottom: 2,
+    textDecoration: 'underline'
   }
 });
 
-export const CVDocument = ({ data, summary }: { data: CVData, summary: string }): ReactElement<DocumentProps> => {
+export const CVDocument = ({ data }: { data: CVJsonData }): ReactElement<DocumentProps> => {
   return (
     <>
       <Page size="A4" style={styles.page}>
         <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 10, justifyContent: 'space-between' }}>
           <View style={{ flexDirection: 'column', alignItems: 'flex-start', marginBottom: 10 }}>
-            <Text style={styles.heading}>{data.personalInfo.name}</Text>
-            <Text style={styles.jobTitle}>{data.personalInfo.mainTitle}</Text>
+            <Text style={styles.heading}>{data.name}</Text>
+            <Text style={styles.jobTitle}>{data.mainTitle}</Text>
             {/* {data.personalInfo.secondaryTitles.map((title, i) => (
               <Text key={i}>{title}</Text>
             ))} */}
             <View style={styles.contactElement}>
               <Image src={icons.email} style={{ width: 10, height: 10, marginRight: 3 }} />
-              <Text>{data.contactInfo.Email}</Text>
+              <Text>{data.email}</Text>
             </View>
             <View style={styles.contactElement}>
               <Image src={icons.phone} style={{ width: 10, height: 10, marginRight: 3 }} />
-              <Text>{data.contactInfo.Phone}</Text>
+              <Text>{data.phone}</Text>
             </View>
             <View style={styles.contactElement}>
-              <Link src={data.contactInfo.LinkedIn} style={{textDecoration: 'none', display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-                <Image src={icons.linekedIn} style={{ width: 10, height: 10, marginRight: 3 }} />
+              <Link src={data.linkedIn} style={{textDecoration: 'none', display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+                <Image src={icons.linkedIn} style={{ width: 10, height: 10, marginRight: 3 }} />
                 <Text>LinkedIn</Text>
               </Link>
             </View>
           </View>
           <Image
             style={styles.photo}
-            src={`${process.env.BASE_URL}/avatar.png`}
+            src={avatar}
           />
         </View>
 
         <View style={styles.section}>
           <Text style={styles.subheading}>SUMMARY</Text>
           <View style={styles.line} />
-          <Text style={styles.text}>{summary}</Text>
+          <Text style={styles.text}>{data.summary}</Text>
         </View>
 
         <View style={styles.section}>
           <Text style={styles.subheading}>SKILLS</Text>
           <View style={styles.line} />
-          <Text style={styles.text}><Text style={{ fontWeight: 'bold' }}>Stack:</Text> {data.skills.skillStack.join(', ')}</Text>
-          <Text style={styles.text}><Text style={{ fontWeight: 'bold' }}>Tools:</Text> {data.skills.tools.join(', ')}</Text>
-          <Text style={styles.text}><Text style={{ fontWeight: 'bold' }}>Databases:</Text> {data.skills.databases.join(', ')}</Text>
-          <Text style={styles.text}><Text style={{ fontWeight: 'bold' }}>Other:</Text> {data.skills.other.join(', ')}</Text>
+          <Text style={styles.skills}> {data.skills.join(', ')}</Text>
         </View>
 
         <View style={styles.section}>
           <Text style={styles.subheading}>EXPERIENCE</Text>
           <View style={styles.line} />
-          {data.companies.map(company => {
-            const {start, end} = workingPeriod(company.start_date, company.end_date);
-            return (<View key={company.id} style={{ marginBottom: 6 }}>
-                <Text style={{ fontWeight: 'bold' }}>{company.companyName} ({start} – {end})</Text>
+          {data.experience.map(company => 
+             (<View key={company.id} style={{ marginBottom: 6 }}>
+                <Text style={{ fontWeight: 'bold' }}>{company.companyName} ({company.startDate} – {company.endDate})</Text>
                 <Text>Position: {company.position}</Text>
                 <Text>Projects:</Text>
-                {company.projects.map(proj => {
-                  const project = data.projects.find(p => p.id === proj.id);
+                {company.projects.map(project => {
+                  
                   return project ? (
-                    <View key={proj.id} style={{ marginLeft: 10, marginBottom: 4 }}>
-                      <Text style={{ fontWeight: 'bold' }}>{project.project_name}</Text>
+                    <View key={project.id} style={{ marginLeft: 10, marginBottom: 4 }}>
+                      <Text style={{ fontWeight: 'bold' }}>{project.projectName}</Text>
                       <Text>Role: {project.role}</Text>
-                      <Text>Team size: {project.team_size}</Text>
+                      <Text>Team size: {project.teamSize}</Text>
                       <Text>Technologies: {project.technicalStack.join(', ')}</Text>
                       <Text>Responsibilities:</Text>
                       {project.responsibilities.map((r, i) => (
@@ -145,22 +154,23 @@ export const CVDocument = ({ data, summary }: { data: CVData, summary: string })
                   ) : null;
                 })}
               </View>
-            );
-          })}
+            ))}
         </View>
 
         <View style={styles.section}>
           <Text style={styles.subheading}>EDUCATION</Text>
           <View style={styles.line} />
-          <Text>{data.personalInfo.education} — {data.personalInfo.educationPlace}</Text>
+          <Text>{data.education} — {data.educationPlace}</Text>
         </View>
 
         <View style={styles.section}>
           <Text style={styles.subheading}>CERTIFICATIONS</Text>
           <View style={styles.line} />
-          {/* {data.projects.length > 0 && (
-            <Text>{data.certifications?.join(', ')}</Text>
-          )} */}
+          {data.certificates.map((certificate) => (
+            <Link key={certificate.id} src={certificate.link} style={{textDecoration: 'none', display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+              <Text>{certificate.name}</Text>
+            </Link>
+          ))}
         </View>
       </Page>
     </>
