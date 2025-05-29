@@ -1,0 +1,222 @@
+{
+  "name": "Serhii Smilianets",
+  "mainTitle": "Salesforce Commerce Cloud Developer",
+  "email": "smilyanets1991@gmail.com",
+  "phone": "+380 96 831 09 94",
+  "linkedIn": "https://www.linkedin.com/in/serhii-smilianets-3425021b8/",
+  "portfolioLink": "https://serhiismilianets.vercel.app",
+  "education": "Specialist degree in Information Technology",
+  "educationPlace": "Odesa National Academy of Communications",
+  "educationStartYear": 2009,
+  "educationEndYear": 2014,
+  "summary": "With over six years of specialized experience in Salesforce Commerce Cloud (SFCC), I excel in delivering robust e-commerce solutions as a Full Stack Developer. My journey from front-end development to mastering complex back-end integrations highlights my versatility across technologies such as JavaScript, Node.js, and React. I have contributed to high-profile projects, enhancing functionalities like checkout processes, third-party integrations, and performance optimization, ensuring scalable and efficient systems. Certified in SFCC, I thrive in dynamic environments, always aiming to push the boundaries of e-commerce innovation.",
+  "skills": [
+    "JavaScript",
+    "HTML",
+    "CSS/SCSS/SASS",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "Salesforce Commerce Cloud",
+    "SFRA",
+    "SiteGenesis",
+    "OCAPI/SCAPI/SLAS",
+    "Jobs",
+    "Services",
+    "SFCC Custom API Hooks"
+  ],
+  "languages": [
+    "English (B2+)",
+    "Ukrainian (Native)"
+  ],
+  "certificates": [
+    {
+      "id": "sfcc-developer",
+      "name": "Salesforce Certified B2C Commerce Developer",
+      "link": "https://www.salesforce.com/trailblazer/serhiismilianets",
+      "icon": "sfcc.png"
+    }
+  ],
+  "experience": [
+    {
+      "id": "epam",
+      "companyName": "EPAM Systems",
+      "position": "Senior Salesforce Commerce Cloud Developer",
+      "startDate": "10/2021",
+      "endDate": "4/2025",
+      "projects": [
+        {
+          "id": "sephorame",
+          "projectName": "Sephora ME",
+          "highlights": [
+            "Developed custom SLAS/SCAPI hooks, extending Salesforce Commerce Cloud API to meet specific business needs.",
+            "Managed import/export jobs, ensuring timely catalog updates and data consistency.",
+            "Optimized Business Manager database configurations, enhancing data management efficiency."
+          ]
+        },
+        {
+          "id": "muchachomalo",
+          "projectName": "Muchachomalo",
+          "highlights": [
+            "Integrated GA4 for enhanced data tracking and reporting capabilities.",
+            "Upgraded SFRA and Adyen to latest versions, improving system compatibility and transaction security.",
+            "Resolved bugs to maintain optimal system performance and stability."
+          ]
+        },
+        {
+          "id": "hansanders",
+          "projectName": "Hans Anders",
+          "highlights": [
+            "Enhanced server-side logic for improved system functionality and maintainability.",
+            "Improved Google Maps integration, increasing accuracy and usability.",
+            "Resolved bugs, enhancing system stability and performance."
+          ]
+        },
+        {
+          "id": "florisvanbommel",
+          "projectName": "Floris van Bommel",
+          "highlights": [
+            "Implemented server-side solutions to enhance functionality and efficiency.",
+            "Optimized product feed management jobs for accurate data synchronization.",
+            "Resolved bugs to maintain site performance and stability."
+          ]
+        },
+        {
+          "id": "mizuno",
+          "projectName": "Mizuno",
+          "highlights": [
+            "Updated Adyen payment services, ensuring seamless and secure transactions.",
+            "Implemented T-shirt jersey customization, enhancing product personalization.",
+            "Resolved order processing issues, improving reliability and customer satisfaction."
+          ]
+        },
+        {
+          "id": "wolford",
+          "projectName": "Wolford",
+          "highlights": [
+            "Optimized scheduled jobs for product feed management, ensuring data accuracy.",
+            "Implemented server-side solutions to enhance site functionality.",
+            "Resolved bugs, maintaining site stability and performance."
+          ]
+        },
+        {
+          "id": "bugaboo",
+          "projectName": "Bugaboo",
+          "highlights": [
+            "Integrated Marketing Cloud for improved email data transmission.",
+            "Upgraded SFRA to ensure compatibility with latest features.",
+            "Developed order tracking with third-party API integration for real-time updates."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tryzens",
+      "companyName": "Tryzens Global",
+      "position": "Senior Salesforce Commerce Cloud Full Stack Developer",
+      "startDate": "10/2021",
+      "endDate": "2/2022",
+      "projects": [
+        {
+          "id": "whittard",
+          "projectName": "Whittard of Chelsea",
+          "highlights": [
+            "Developed shipping schedule using OOB tools, optimizing delivery planning.",
+            "Implemented 'Notify Me Later' feature, improving customer engagement.",
+            "Configured Page Designer for streamlined content management."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "osf",
+      "companyName": "OSF Digital",
+      "position": "Salesforce Commerce Cloud Full Stack Developer",
+      "startDate": "9/2018",
+      "endDate": "10/2021",
+      "projects": [
+        {
+          "id": "zippy",
+          "projectName": "Zippy",
+          "highlights": [
+            "Extended Endless Aisle features, improving product availability management.",
+            "Developed new CLP tile logic, enhancing product browsing experience.",
+            "Implemented video logic on PDP, providing interactive product showcases."
+          ]
+        },
+        {
+          "id": "mo",
+          "projectName": "Mo",
+          "highlights": [
+            "Extended Endless Aisle features, improving product availability management.",
+            "Developed new CLP tile logic, enhancing product browsing experience.",
+            "Implemented video logic on PDP, providing interactive product showcases."
+          ]
+        },
+        {
+          "id": "moleskine",
+          "projectName": "Moleskine",
+          "highlights": [
+            "Integrated Order Details and History with Salesforce OMS, ensuring data accuracy.",
+            "Refined search and filter functionalities, enhancing user experience.",
+            "Enhanced checkout shipping logic, improving flow and handling various scenarios."
+          ]
+        },
+        {
+          "id": "baccarat",
+          "projectName": "Baccarat",
+          "highlights": [
+            "Implemented Korean locale, expanding user accessibility.",
+            "Resolved bugs, maintaining site stability and performance.",
+            "Updated code logic to meet latest requirements and improve performance."
+          ]
+        },
+        {
+          "id": "continente",
+          "projectName": "Continente",
+          "highlights": [
+            "Developed Login/Register functionality with customer activation logic.",
+            "Implemented and supported Order History and Details with third-party OMS.",
+            "Led GTM implementation for optimized marketing and analytics tracking."
+          ]
+        },
+        {
+          "id": "ubisoft",
+          "projectName": "Ubisoft",
+          "highlights": [
+            "Implemented GTM across site, optimizing marketing and analytics tracking.",
+            "Resolved bugs, maintaining optimal performance and user experience."
+          ]
+        },
+        {
+          "id": "etnia",
+          "projectName": "Etnia Barcelona",
+          "highlights": [
+            "Developed Password Reset logic, ensuring secure password recovery.",
+            "Implemented static pages, enhancing site content structure and user experience.",
+            "Led new feature implementations, enhancing site functionality."
+          ]
+        },
+        {
+          "id": "bouclair",
+          "projectName": "Bouclair",
+          "highlights": [
+            "Led transition to SFRA, ensuring seamless migration and performance improvement.",
+            "Implemented Wishlist functionality, enhancing user experience.",
+            "Resolved post-migration bugs, ensuring site stability and functionality."
+          ]
+        },
+        {
+          "id": "cigars",
+          "projectName": "Cigars",
+          "highlights": [
+            "Designed Authentication system, including Login and Registration.",
+            "Developed Order History and Details, ensuring accurate user data display.",
+            "Implemented Navigation Menu, enhancing site usability and user experience."
+          ]
+        }
+      ]
+    }
+  ]
+}

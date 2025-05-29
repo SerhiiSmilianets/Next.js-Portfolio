@@ -46,6 +46,8 @@ export type PersonalInfo = {
     secondaryTitles: string[];
     education: string;
     educationPlace: string;
+    educationStartYear: number;
+    educationEndYear: number;
     summary: string;
 };
 
@@ -88,10 +90,7 @@ export type AllData = {
 export interface CVProject {
   id: string;
   projectName: string;
-  role: string;
-  teamSize: number;
-  technicalStack: string[];
-  responsibilities: string[];
+  highlights: string[];
 }
 
 export interface CVExperience {
@@ -99,8 +98,8 @@ export interface CVExperience {
   companyName: string;
   position: string;
   startDate: string;
-  endDate: string | null;
-  projects: CVProject[];
+  endDate: string | 'Present';
+  projects: (CVProject | null)[];
 }
 
 export interface CVJsonData {
@@ -109,11 +108,29 @@ export interface CVJsonData {
   email: string;
   phone: string;
   linkedIn: string;
+  portfolioLink: string;
   education: string;
   educationPlace: string;
+  educationStartYear: number;
+  educationEndYear: number;
   summary: string;
   skills: string[];
   languages: string[];
   certificates: Certification[];
   experience: CVExperience[];
 }
+
+export type AIProject = {
+  id: string;
+  highlights: string[];
+} | undefined;
+
+export type AIExperience = {
+  id: string;
+  projects: AIProject[];
+} | undefined
+
+export type AIResult = {
+  summary: string;
+  experience: AIExperience[];
+};
