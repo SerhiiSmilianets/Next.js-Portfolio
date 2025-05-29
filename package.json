@@ -13,7 +13,10 @@
     "generate:cv": "npm run generate:cv-json && npm run generate:cv-pdf"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^1.3.22",
     "@react-pdf/renderer": "^4.3.0",
+    "ai": "^4.3.16",
+    "dotenv": "^16.5.0",
     "framer-motion": "^12.5.0",
     "next": "^15.3.0",
     "react": "^19.0.0",
