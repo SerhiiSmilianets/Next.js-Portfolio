@@ -18,14 +18,6 @@ Font.register({
   src: 'https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Me5Q.ttf'
 });
 
-// const icons = {
-//   email: `${process.env.BASE_URL}/cv-icons/email.png`,
-//   phone: `${process.env.BASE_URL}/cv-icons/phone.png`,
-//   linkedIn: `${process.env.BASE_URL}/cv-icons/linkedin.png`,
-// }
-
-// const avatar = `${process.env.BASE_URL}/avatar.png`;
-
 const icons = {
   email: `public/cv-icons/email.png`,
   phone: `public/cv-icons/phone.png`,

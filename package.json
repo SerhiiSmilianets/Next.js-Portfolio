@@ -5,12 +5,13 @@
   "description": "My personal portfolio built with Next.js and custom css styles.",
   "scripts": {
     "dev": "cross-env NODE_OPTIONS='--inspect' next dev --turbopack",
-    "build": "npm run generate:cv && next build",
+    "build": "npm run generate:cv && npm run generate:qr && next build",
     "start": "next start",
     "lint": "next lint",
     "generate:cv-json": "ts-node -r tsconfig-paths/register src/scripts/generate-cv-json.ts",
     "generate:cv-pdf": "tsx src/scripts/generate-cv-pdf.ts",
-    "generate:cv": "npm run generate:cv-json && npm run generate:cv-pdf"
+    "generate:cv": "npm run generate:cv-json && npm run generate:cv-pdf",
+    "generate:qr": "tsx src/scripts/generate-qr-code.ts"
   },
   "dependencies": {
     "@ai-sdk/openai": "^1.3.22",
@@ -19,6 +20,7 @@
     "dotenv": "^16.5.0",
     "framer-motion": "^12.5.0",
     "next": "^15.3.0",
+    "qrcode": "^1.5.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
@@ -29,6 +31,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
+    "@types/qrcode": "^1.5.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "cross-env": "^7.0.3",

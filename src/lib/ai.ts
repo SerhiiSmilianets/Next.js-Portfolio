@@ -77,8 +77,6 @@ export async function generateSummaryAndHighlights(data: AllData): Promise<AIRes
       maxTokens: 1500,
     });
 
-    
-
     const json = extractJsonFromText(text);
     console.log('✅ AI generation successful:', text);
     
