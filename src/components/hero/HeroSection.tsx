@@ -1,5 +1,5 @@
 import styles from "@/styles/modules/hero-section.module.css";
-import Avatar from '../../../public/avatar.png';
+import Avatar from '../../../public/avatar_no_background.png';
 import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';

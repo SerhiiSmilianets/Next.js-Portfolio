@@ -26,7 +26,7 @@ const icons = {
   calendar: `public/cv-icons/calendar.png`
 }
 
-const avatar = `public/avatar.png`;
+const avatar = `public/cv_avatar.png`;
 
 const styles = StyleSheet.create({
   page: {
