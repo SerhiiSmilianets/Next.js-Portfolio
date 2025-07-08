@@ -40,6 +40,43 @@
     color: var(--titlecolor);
     text-shadow: var(--titleshadow)
 }
+.certificates-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.certificate-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.certificate-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.certificate-tooltip {
+    visibility: hidden;
+    width: auto;
+    background-color: var(--textcolor);
+    color: var(--background);
+    opacity: 0.8;
+    text-align: center;
+    font-size: 0.8em;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+}
+
+.certificate-item:hover .certificate-tooltip {
+    visibility: visible;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
 
 @media (min-width: 2561px) {
     .about-profile-image-container{
@@ -83,6 +120,10 @@
     .about-profile-description-container {
         flex: 3;
     }
+
+    .certificates-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 @media (max-width: 700px) {
@@ -105,5 +146,13 @@
     .about-profile-image-container {
         margin-right: 0;
         margin-bottom: 20px;
+    }
+
+    .certificates-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .certificate-tooltip {
+        display: none;
     }
 }

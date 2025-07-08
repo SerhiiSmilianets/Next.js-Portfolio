@@ -59,9 +59,9 @@ export type Skills = {
     languages: string[];
 };
 
-export type Certification = {
+export type CertificateData = {
     id: string;
-    name: string;
+    title: string;
     link?: string;
     icon?: string;
 }
@@ -84,7 +84,7 @@ export type AllData = {
   contactInfo: ContactInfo;
   companies: Company[];
   projects: Project[];
-  certificates: Certification[];
+  certificates: CertificateData[];
 };
 
 export interface CVProject {
@@ -116,7 +116,7 @@ export interface CVJsonData {
   summary: string;
   skills: string[];
   languages: string[];
-  certificates: Certification[];
+  certificates: CertificateData[];
   experience: CVExperience[];
 }
 
