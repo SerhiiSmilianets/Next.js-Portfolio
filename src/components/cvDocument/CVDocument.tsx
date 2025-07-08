@@ -194,7 +194,7 @@ export const CVDocument = ({ data }: { data: CVJsonData }): ReactElement<Documen
             <View style={styles.line} />
             {data.certificates.map((certificate) => (
               <Link key={certificate.id} src={certificate.link} style={styles.link}>
-                <Text>{certificate.name}</Text>
+                <Text>{certificate.title}</Text>
               </Link>
             ))}
           </View>
