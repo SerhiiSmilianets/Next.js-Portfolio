@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { WorkingExperience } from '@/components/about/experience/Experience'
-import { getCompanies, getSummaryInfo } from '@/lib/serverData';
-import {Company} from '@/types';
+import { CertificatesSection } from '@/components/about/certificatesSection/CertificatesSection';
+import { getCompanies, getSummaryInfo, getCertificates } from '@/lib/serverData';
+import {Company, CertificateData} from '@/types';
 import Image from 'next/image';
 import Avatar from '../../../public/avatar.jpg';
 import '@/styles/about.css';
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 export default async function About() {
   const companies : Company[] = await getCompanies();
   const summary : string = await getSummaryInfo();
+  const certificates : CertificateData[] = await getCertificates();
 
   return (
     <div>
@@ -49,6 +51,10 @@ export default async function About() {
           <li><strong>Technologies:</strong> Salesforce B2C Commerce Cloud, Salesforce Reference Architecture(SFRA), SiteGenesis, JS, HTML, CSS/SASS/SCSS, jQuery, React.js, Next.js, Node.js, Express, Git, AI</li>
         </ul>
       </section>
+
+      <hr/>
+
+      <CertificatesSection certificates={certificates}/>
 
       <hr/>
 

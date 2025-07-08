@@ -19,7 +19,7 @@
     "certificates": [
         {
             "id": "sfcc-developer",
-            "name": "Salesforce Certified B2C Commerce Developer",
+            "title": "Salesforce Certified B2C Commerce Developer",
             "link": "https://www.salesforce.com/trailblazer/serhiismilianets",
             "icon": "sfcc.png"
         }

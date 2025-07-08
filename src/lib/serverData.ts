@@ -64,3 +64,8 @@ export async function getSummaryInfo() {
 
   return data.personalInfo.summary;
 }
+
+export async function getCertificates() {
+  const data = await getData();
+  return data.certificates;
+}

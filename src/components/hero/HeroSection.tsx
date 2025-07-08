@@ -32,7 +32,6 @@ export const HeroSection: React.FC = () => {
           <Image
                 src={Avatar}
                 alt="Profile Picture"
-                // fill
                 priority
                 className={styles.avatar}
               />
