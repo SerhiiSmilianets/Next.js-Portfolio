@@ -8,7 +8,11 @@ import "@/styles/globals.css";
 
 import { Sidebar } from "@/components/sidebar/Sidebar";
 import { Header } from "@/components/header/Header";
+
+// Vercel Analytics
 import { Analytics } from '@vercel/analytics/next';
+// Vercel Speed Insights
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -90,6 +94,7 @@ export default function RootLayout({
             <div className="layout-content">
               {children}
               <Analytics />
+              <SpeedInsights />
             </div>
           </div>
         </main>
