@@ -15,13 +15,9 @@ export const HeroSection: React.FC = () => {
         <div className={`${styles.textBlock} animate-slideInBot`}>
           <h1 className={styles.title}>
             <span className={styles.profileName}>Serhii Smilianets</span><br />
-            <hr/>
-            Salesforce
-            Commerce Cloud
-            Developer
-            <hr/>
-            Web Developer
-            <hr/>
+            <span className={styles.primaryRole}>Salesforce Commerce Cloud Developer</span>
+            <br/>
+            <span className={styles.secondaryRole}>Web Developer</span>
           </h1>
           <p className={styles.subtitle}>
             I build scalable e-commerce solutions using SiteGenesis, SFRA and Headless architecture. With {experienceYears}+ years of experience, I focus on performance, code quality and business value.
