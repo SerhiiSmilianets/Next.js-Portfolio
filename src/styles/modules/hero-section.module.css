@@ -49,6 +49,19 @@
     font-weight: 800;
     color: color-mix(in srgb, var(--titlecolor) 90%, white 20%);
   }
+
+  .primaryRole {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: color-mix(in srgb, var(--textcolor) 70%, var(--titlecolor) 30%);
+  }
+
+  .secondaryRole {
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: color-mix(in srgb, var(--textcolor) 70%, black 30%);
+    margin-top: 0.5rem;
+  }
   
   @media (min-width: 769px) {
     .title {
