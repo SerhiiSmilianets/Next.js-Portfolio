@@ -20,7 +20,7 @@ export const HeroSection: React.FC = () => {
             Developer
           </h1>
           <p className={styles.subtitle}>
-            I build scalable e-commerce solutions using SFRA, OCAPI, and SCAPI. With {experienceYears}+ years of experience, I focus on performance, code quality and business value.
+            I build scalable e-commerce solutions using SiteGenesis, SFRA and Headless architecture. With {experienceYears}+ years of experience, I focus on performance, code quality and business value.
           </p>
           <div className={styles.buttons}>
             <Link href="/projects" className={styles.showProjectsBtn}>View Projects</Link>
